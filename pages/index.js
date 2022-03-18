@@ -1,8 +1,6 @@
 import fs from "fs";
 import matter from "gray-matter";
-
 import Link from "next/link";
-import Img from "../components/img";
 
 export async function getStaticProps() {
   const files = fs.readdirSync("posts");
@@ -34,12 +32,6 @@ export default function Home({ posts }) {
         >
           <Link href={`/post/${slug}`}>
             <a>
-              <Img
-                width={650}
-                height={340}
-                alt={frontmatter.title}
-                src={`/${frontmatter.socialImage}`}
-              />
               <h1 className="p-4">{frontmatter.title}</h1>
             </a>
           </Link>
