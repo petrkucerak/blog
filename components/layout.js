@@ -1,3 +1,4 @@
+import { IconTree } from "@tabler/icons";
 import Link from "next/link";
 
 export default function Layout({ children }) {
@@ -6,7 +7,9 @@ export default function Layout({ children }) {
       <header className="bg-fuchsia-100 mb-8 py-4">
         <div className="container mx-auto flex justify-center">
           <Link href="/">
-            <a>🏡</a>
+            <a>
+              <IconTree />
+            </a>
           </Link>
           <span className="mx-auto">Welcome to my blog</span>{" "}
         </div>
