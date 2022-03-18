@@ -2,6 +2,7 @@ import fs from "fs";
 import matter from "gray-matter";
 import Image from "next/image";
 import Link from "next/link";
+import cloudflareImageLoader from "../api/loader"
 
 export async function getStaticProps() {
   const files = fs.readdirSync("posts");
@@ -34,6 +35,7 @@ export default function Home({ posts }) {
           <Link href={`/post/${slug}`}>
             <a>
               <Image
+                loader={cloudflareImageLoader}
                 width={650}
                 height={340}
                 alt={frontmatter.title}
