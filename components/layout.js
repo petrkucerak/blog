@@ -1,9 +1,11 @@
 import { IconTree } from "@tabler/icons";
 import Link from "next/link";
+import Meta from "../components/meta";
 
 export default function Layout({ children }) {
   return (
     <div className="flex flex-col min-h-screen">
+      <Meta></Meta>
       <header className="bg-fuchsia-100 mb-8 py-4">
         <div className="container mx-auto flex justify-center">
           <Link href="/">
