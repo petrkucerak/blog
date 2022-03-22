@@ -20,7 +20,7 @@ export default function Layout({ children }) {
       <main className="container mx-auto flex-1">{children}</main>
       <footer className="bg-stone-900 mt-8 py-20">
         <div className="container mx-auto flex justify-center text-white">
-          <a href="https://petrkucerak.cz/" target="_blank">petr@khome.cz</a>
+          <a href="https://petrkucerak.cz/" target="_blank" rel="noreferrer">petr@khome.cz</a>
         </div>
       </footer>
     </div>
