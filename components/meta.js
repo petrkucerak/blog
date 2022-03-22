@@ -11,7 +11,7 @@ export default function Meta(){
             <meta name="msapplication-TileColor" content="#da532c"/>
             <meta name="theme-color" content="#ffffff"/>
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
             <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@500;700&display=swap" rel="stylesheet"/>
             <title>Kůčův blog</title>
         </Head>
