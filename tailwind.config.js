@@ -4,7 +4,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        athiti: ["Athiti", "sans-serif"],
+      },
+    },
   },
   plugins: [require("@tailwindcss/typography")],
 };

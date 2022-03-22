@@ -35,7 +35,7 @@ export default function Home({ posts }) {
           <Link href={`/post/${slug}`}>
             <a className="p-5">
               <IconHeadphones className="ml-2" />
-              <h1 className="p-2">{frontmatter.title}</h1>
+              <h1 className="p-2 uppercase font-bold">{frontmatter.title}</h1>
               <Tags tags={frontmatter.tags} />
             </a>
           </Link>
