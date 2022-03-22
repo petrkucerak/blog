@@ -1,6 +1,8 @@
+import { IconHeadphones } from "@tabler/icons";
 import fs from "fs";
 import matter from "gray-matter";
 import Link from "next/link";
+import Tags from "../components/tags";
 
 export async function getStaticProps() {
   const files = fs.readdirSync("posts");
@@ -24,15 +26,17 @@ export async function getStaticProps() {
 
 export default function Home({ posts }) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 p-4 md:p-0">
+    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 p-4 md:p-0 max-w-4xl w-[90vw] m-0 mx-auto">
       {posts.map(({ slug, frontmatter }) => (
         <div
           key={slug}
-          className="border border-gray-200 m-2 rounded-xl shadow-lg overflow-hidden flex flex-col"
+          className="m-2 overflow-hidden flex flex-col py-1 text-stone-500 hover:text-stone-900 transition-all hover:scale-105 duration-300	"
         >
           <Link href={`/post/${slug}`}>
-            <a>
-              <h1 className="p-4">{frontmatter.title}</h1>
+            <a className="p-5">
+              <IconHeadphones className="ml-2" />
+              <h1 className="p-2">{frontmatter.title}</h1>
+              <Tags tags={frontmatter.tags} />
             </a>
           </Link>
         </div>
