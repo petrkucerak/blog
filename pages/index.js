@@ -1,7 +1,7 @@
-import { IconHeadphones } from "@tabler/icons";
 import fs from "fs";
 import matter from "gray-matter";
 import Link from "next/link";
+import Icon from "../components/icon";
 import Tags from "../components/tags";
 
 export async function getStaticProps() {
@@ -34,7 +34,7 @@ export default function Home({ posts }) {
         >
           <Link href={`/post/${slug}`}>
             <a className="p-5">
-              <IconHeadphones className="ml-2" />
+              <Icon icon={frontmatter.icon} />
               <h1 className="p-2 uppercase font-bold">{frontmatter.title}</h1>
               <Tags tags={frontmatter.tags} />
             </a>
