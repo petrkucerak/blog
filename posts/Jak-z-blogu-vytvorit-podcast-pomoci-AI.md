@@ -5,6 +5,7 @@ date: '2022-03-22'
 tags:
   - nextjs
   - Azure
+icon: 'headphones'
 ---
 
 **Podcasty jsou dnes velice moderní. Lidé nemají čas číst noviny a blogové příspěvky, ale raději si pustí nejnovější zpravodajství či zajímavé rozhovory v audio podobě. Rád bych se podělil o jednoduchý postup, v kterém si ukážeme, jak z příspěvků na vašem blogu jednoduše pomocí modelů umělé inteligence vytvořit audionahrávky.**
