@@ -1,19 +1,53 @@
 import Head from "next/head";
 
-export default function Meta(){
-    return (
-        <Head>
-            <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
-            <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
-            <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
-            <link rel="manifest" href="/site.webmanifest"/>
-            <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#4b6b3c"/>
-            <meta name="msapplication-TileColor" content="#da532c"/>
-            <meta name="theme-color" content="#ffffff"/>
-            <link rel="preconnect" href="https://fonts.googleapis.com"/>
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
-            <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@500;700&display=swap" rel="stylesheet"/>
-            <title>Kůčův blog</title>
-        </Head>
-    );
+export default function Meta() {
+  return (
+    <Head>
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/apple-touch-icon.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/favicon-16x16.png"
+      />
+      <link rel="manifest" href="/site.webmanifest" />
+      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#4b6b3c" />
+      <meta name="msapplication-TileColor" content="#da532c" />
+      <meta name="theme-color" content="#ffffff" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossOrigin="true"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Athiti:wght@500;700&display=swap"
+        rel="preload"
+        as="style"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Athiti:wght@500;700&display=swap"
+        rel="stylesheet"
+        media="print"
+        onLoad="this.media='all'"
+      />
+      <noscript>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Athiti:wght@500;700&display=swap"
+          rel="stylesheet"
+        />
+      </noscript>
+      <title>Kůčův blog</title>
+    </Head>
+  );
 }
