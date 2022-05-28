@@ -8,10 +8,11 @@ icon: 'ship'
 
 ---
 
-**Raft je paralelní algortimus konsezu pro správu a replikaci logů. Poskytuje stejný výsledek jako [Paxos protokol](https://en.wikipedia.org/wiki/Paxos_(computer_science)). Jeho efektivita je stejná, ale jeho struktura je srozumitelnější. Poskytuje lepší funkcionalitu a základ pro implementaci v různých systémech. Pro zvýšení srozumitelnosti, Raft odděluje jednotlivé klíčové prvky konsenzu (např. volbu lídra, repikaci logů a bezpečnost). [1]**
+**Raft je paralelní algortimus konsezu pro správu a replikaci logů. Poskytuje stejný výsledek jako [Paxos protokol](https://en.wikipedia.org/wiki/Paxos_(computer_science)). Jeho efektivita je stejná, ale pro běžného smrteníka jednudužší na pochopení. Poskytuje lepší funkcionalitu a základ pro implementaci v různých systémech. Pro zvýšení srozumitelnosti, Raft odděluje jednotlivé klíčové prvky konsenzu (např. volbu lídra, repikaci logů a bezpečnost). [1]**
 
+## Fungování alogrimu Raft
 
-## Jednotlivé fáze Raftu
+### Jednotlivé fáze Raftu
 
 1. volba lídra
 2. běžný chod (základní replikace logu)
@@ -19,7 +20,7 @@ icon: 'ship'
 4. neutralizace starých lídrů
 5. interakce s klienty
 
-### Volba lídra
+#### Volba lídra
 
 Každé zařízení (server) může být právě v jednom z následujících stavů:
 
@@ -29,7 +30,7 @@ Každé zařízení (server) může být právě v jednom z následujících sta
 
 Kdy platí, že za běžného provozu exituje pouze 1 lídr a N následovníků.
 
-### Epochy
+#### Epochy
 
 Celkový běh Rafu se rozděluje do jednotlových časových (logický čas) období, tzv. epoch.
 
@@ -41,7 +42,7 @@ Epocha se skládá ze dvou částí
   
 Může nastat epocha bez lídra, jelikož se nepovede lídra zvolit.
 
-### Průběh
+#### Průběh
 
 Na začátku jsou všechna zařízení jako ***následnovíci***. Ti očekávjí zprávu od *lídra* nebo od *kandidátu na lídra*.
 
@@ -49,13 +50,18 @@ Lídři posílají ***heartbeats***, aby si udrželi autoritu.
 
 Jakmile *následník* neobrdží zprávu do určitého *timeoutu*, předpokládá, že lídr havaroval a iniciuje ***volbu nového lídra***.
 
-#### Inicializace voleb
+##### Inicializace voleb
 
 Zařízení, které spustí volbu nového lídra:
 1. zvýší číslo epochy
 2. změní svůj stav na KADNIDÁT
 3. zahlasuje pro sebe
 4. pošle *RequestVote* všem ostatním serverům a čeká na násedující stavy
+   - obdrží hlasy od většiny serverů -> změní se na *LÍDR* a pošle *heartbeat* ostatní procesům
+   - přijme zprávu od valdiního *lídra* (tedy jiný lídr byl zvolen dříve), vrátí se tedy do stavu *NÁSLEDOVNÍK*
+   - nikod nevyhraje volby, tj. vyprší *timeout* -> zvýší se ID epochy
+
+![Stavovy diagram](ToDo)
    
 
 ## Reference
