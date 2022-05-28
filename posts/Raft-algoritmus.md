@@ -49,9 +49,17 @@ Lídři posílají ***heartbeats***, aby si udrželi autoritu.
 
 Jakmile *následník* neobrdží zprávu do určitého *timeoutu*, předpokládá, že lídr havaroval a iniciuje ***volbu nového lídra***.
 
+#### Inicializace voleb
+
+Zařízení, které spustí volbu nového lídra:
+1. zvýší číslo epochy
+2. změní svůj stav na KADNIDÁT
+3. zahlasuje pro sebe
+4. pošle *RequestVote* všem ostatním serverům a čeká na násedující stavy
+   
 
 ## Reference
 
 [1] In Search of an Understandable Consensus Algorithm (Extended Version) | *Diego Ongaro and John Ousterhout (Stanford University)*
 
-[2] Algoritmus Raft (Michal Jakob) | *https://cw.fel.cvut.cz/wiki/_media/courses/b4b36pdv/lectures/05_raft_2021.pdf*
+[2] Algoritmus Raft (Michal Jakob) | *[Slideshow](https://cw.fel.cvut.cz/wiki/_media/courses/b4b36pdv/lectures/05_raft_2021.pdf)*
