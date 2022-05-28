@@ -61,7 +61,7 @@ Zařízení, které spustí volbu nového lídra:
    - přijme zprávu od valdiního *lídra* (tedy jiný lídr byl zvolen dříve), vrátí se tedy do stavu *NÁSLEDOVNÍK*
    - nikod nevyhraje volby, tj. vyprší *timeout* -> zvýší se ID epochy
 
-![Stavovy diagram](ToDo)
+![Stavovy diagram](https://github.com/petrkucerak/blog/blob/post-raft-algoritmus/public/posts/raft-stavovy-diagram.png?raw=true)
    
 
 ## Reference
