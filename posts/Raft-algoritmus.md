@@ -19,6 +19,37 @@ icon: 'ship'
 4. neutralizace starých lídrů
 5. interakce s klienty
 
+### Volba lídra
+
+Každé zařízení (server) může být právě v jednom z následujících stavů:
+
+- **LÍDR** obsahuje požadavky klientů a replikue log
+- **NÁSLEDOVNÍK** pasivní zařízení, které pouze reaguje na zprávy od jiných zařízení
+- **KANDIDÁT** přechodná role v průběhu volby lídra
+
+Kdy platí, že za běžného provozu exituje pouze 1 lídr a N následovníků.
+
+### Epochy
+
+Celkový běh Rafu se rozděluje do jednotlových časových (logický čas) období, tzv. epoch.
+
+Každá epocha má svoje ID číslo, které se vždy zvyšuje. Každé zařízení i uchovává si své číslo uchovává. Díky tomu se Raft umí vypořádat i s např. vypnutím.
+
+Epocha se skládá ze dvou částí
+- volba lídra
+- běžný chod
+  
+Může nastat epocha bez lídra, jelikož se nepovede lídra zvolit.
+
+### Průběh
+
+Na začátku jsou všechna zařízení jako ***následnovíci***. Ti očekávjí zprávu od *lídra* nebo od *kandidátu na lídra*.
+
+Lídři posílají ***heartbeats***, aby si udrželi autoritu.
+
+Jakmile *následník* neobrdží zprávu do určitého *timeoutu*, předpokládá, že lídr havaroval a iniciuje ***volbu nového lídra***.
+
+
 ## Reference
 
 [1] In Search of an Understandable Consensus Algorithm (Extended Version) | *Diego Ongaro and John Ousterhout (Stanford University)*
