@@ -101,6 +101,10 @@ Díky návrhu Raftu platí tzv. ***invarianty raftu***.
 1. Mají-li záznamy logů uložené na ruzných serverch **stejný index a epochu**, pak obsahují **stejný příkaz** a logy jsou **identické** ve všech předešlých **záznamech**.
 2. Je-li daný příkaz **potvrzený**, pak jsou potvrzeny i všechny **předchozí** logy.
 
+#### Kontrola konzistence
+Při odeslání zprávy `AppendEntries` zpráva obsahuje i index a příkaz předchozího záznamu, který slouží k validaci.
+A pokud se záznam neshoduje, je zápis odmítnut.
+
 ## Reference
 
 [1] In Search of an Understandable Consensus Algorithm (Extended Version) | *Diego Ongaro and John Ousterhout (Stanford University)*
