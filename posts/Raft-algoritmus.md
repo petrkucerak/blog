@@ -126,11 +126,32 @@ Tohoto bezpočnostního požadavku dosáhneme pomocí tzv. **Bezpočnostního in
 - pouze záznamy v logu lídra mohou být potvrzeny
 - záznamy musí být v logu potvrzeny předtím, než jsou vykonány na daných zařízeních
 
-#### Zpřísnění výběru lídra
+#### Zpřísnění výběru lídra a nové pravidlo pro potvrzení
 
 Jelikož dosavadní logika fungování Raftu *bezpečnostní invrariant negarantuje*.
 
 Proto se Raft snaží zvolit lídra, který má *nejúplnější log*. Tj. epochu nejvyšší epochou případně pokud mají stejnou epochu, tak s nejvyšším indexem.
+
+Aby lídr požadoval záznam za potvrzený musí být:
+- záznam uložený na většině serverů (známe podmínku)
+- také alespoň jeden nový záznam z lídrovy aktuální epochy na většině serverů (podmínika navíc)
+
+>*Jakmile je tato i předchozí podmínka splněna, již lze prohlásit invariant a bezpočnost za splněnou.*
+
+#### Oprava logu následovníků
+
+Nový lídr musí udlěat logy následovníků konzistentních se svým logem. Tj. smazat přebytečné záznamy a doplnit chybějící záznamy.
+
+V praxi se oprava implementuje tak, že lídr určuje proměnnou `nextIndex` pro každého následovníka:
+- index další záznamu logu, který by měl být odeslán následovníkovi
+- inicializován na *1 + index* poslední záznau lídra
+
+Pokud kontrola konzistence `AppendEntries` selže, sníží `nextIndex` o jednu a zkusí znovu.
+
+>*V podsatě prvně zjistí, jak moc do historie se musí vrátit. Tam vše ustřihne a naplní záobník novými logy.*
+
+### 4. Neutralizace starého lídra
+
 
 ## Reference
 
