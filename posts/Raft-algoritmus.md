@@ -129,6 +129,9 @@ Tohoto bezpočnostního požadavku dosáhneme pomocí tzv. **Bezpočnostního in
 #### Zpřísnění výběru lídra
 
 Jelikož dosavadní logika fungování Raftu *bezpečnostní invrariant negarantuje*.
+
+Proto se Raft snaží zvolit lídra, který má *nejúplnější log*. Tj. epochu nejvyšší epochou případně pokud mají stejnou epochu, tak s nejvyšším indexem.
+
 ## Reference
 
 [1] In Search of an Understandable Consensus Algorithm (Extended Version) | *Diego Ongaro and John Ousterhout (Stanford University)*
