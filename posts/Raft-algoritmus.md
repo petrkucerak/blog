@@ -126,6 +126,9 @@ Tohoto bezpočnostního požadavku dosáhneme pomocí tzv. **Bezpočnostního in
 - pouze záznamy v logu lídra mohou být potvrzeny
 - záznamy musí být v logu potvrzeny předtím, než jsou vykonány na daných zařízeních
 
+#### Zpřísnění výběru lídra
+
+Jelikož dosavadní logika fungování Raftu *bezpečnostní invrariant negarantuje*.
 ## Reference
 
 [1] In Search of an Understandable Consensus Algorithm (Extended Version) | *Diego Ongaro and John Ousterhout (Stanford University)*
