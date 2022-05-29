@@ -61,7 +61,7 @@ Zařízení, které spustí volbu nového lídra:
    - přijme zprávu od validního *lídra* (tedy jiný lídr byl zvolen dříve), vrátí se tedy do stavu *NÁSLEDOVNÍK*
    - nikdo nevyhraje volby, tj. vyprší *timeout* -> zvýší se ID epochy
 
-![Stavovy diagram](https://github.com/petrkucerak/blog/blob/post-raft-algoritmus/public/posts/raft-stavovy-diagram.png?raw=true)
+![Stavovy diagram](https://github.com/petrkucerak/blog/blob/main/public/posts/raft-stavovy-diagram.png?raw=true)
   
 #### Klíčové vlastnosti
 
