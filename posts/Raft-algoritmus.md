@@ -20,7 +20,7 @@ icon: 'ship'
 4. neutralizace starých lídrů
 5. interakce s klienty
 
-### Volba lídra
+### 1. Volba lídra
 
 Každé zařízení (server) může být právě v jednom z následujících stavů:
 
@@ -69,7 +69,7 @@ Zařízení, které spustí volbu nového lídra:
 - **ŽIVOST** jeden z kandidátů musí časem vyhrát
   - k tomu, aby byl minimalizován kolabas při volbách -> *timeouty* jsou nastavovány individuálně v určitém intervalu
 
-### Běžný provoz
+### 2. Běžný provoz
 #### Struktura logů
 
 Jedná se o seznam, který v každé položce obsahuj:
@@ -104,6 +104,27 @@ Díky návrhu Raftu platí tzv. ***invarianty raftu***.
 #### Kontrola konzistence
 Při odeslání zprávy `AppendEntries` zpráva obsahuje i index a příkaz předchozího záznamu, který slouží k validaci.
 A pokud se záznam neshoduje, je zápis odmítnut.
+
+### 3. Změna lídra
+
+Během normálního fungování je zajištěna konzitence. Jakmile ale lídr havaruje, dochází k nové volbě. Je třeba ale ekeftivně ošetřit danou situaci, aby se předešlo nekonzistenci.
+
+Raft neimplementuje žádnou speciální úklivou fázi. Raft neustále posílá zprávy, přičemž správá je zpráva od lídra. Tedy lídr má vždy pravdu.
+
+Jak ale tedy ošetřit vyskytlé havárie?
+
+#### Bezpečnost
+
+Prvně si je třba obecně stanovit, co to znamná *bezpečnost*.
+
+Obecně nutná bezpečnost pro garanci replikace je to, že jakmile je příkaz ze záznamu logu vykonán některým zařízením, nesmí žádné jiné zažení vykonávat jiný příkaz pro stejný záznam.
+
+> *Tedy než něco vykoná dané zařízení, musíme si být jisti, že jiné zařízení nevykoná místo tohoto příkazu něco jiného.*
+
+Tohoto bezpočnostního požadavku dosáhneme pomocí tzv. **Bezpočnostního invariantu Raftu**. Jakmile lídr prohlásí záznam v logu za potvrzený, jakýkoliv budoucí lídr bude mít tento záznam ve svém logu. Díky tomu platí:
+- lídři nikdy nepřepisují záznamy ve svých lozích, pouze je přidávají
+- pouze záznamy v logu lídra mohou být potvrzeny
+- záznamy musí být v logu potvrzeny předtím, než jsou vykonány na daných zařízeních
 
 ## Reference
 
