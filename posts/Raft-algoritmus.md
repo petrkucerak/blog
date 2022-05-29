@@ -8,7 +8,7 @@ icon: 'ship'
 
 ---
 
-**Raft je paralelní algoritmus konsenzu pro správu a replikaci logů. Poskytuje stejný výsledek jako [Paxos protokol](https://en.wikipedia.org/wiki/Paxos_(computer_science)). Jeho efektivita je stejná, ale pro běžného smrtelníka jednodušší na pochopení. Proto poskytuje lepší funkcionalitu a snadnější implementaci v různých systémech. Pro zvýšení srozumitelnosti, Raft odděluje jednotlivé klíčové prvky konsenzu (např. volbu lídra, replikaci logů a bezpečnost). [1]**
+**Raft je paralelní algoritmus konsenzu pro správu a replikaci logů. Poskytuje stejný výsledek jako [Paxos protokol](https://en.wikipedia.org/wiki/Paxos_(computer_science)). Jeho efektivita je stejná, ale pro běžného smrtelníka jednodušší na pochopení. Proto poskytuje lepší funkcionalitu a snadnější implementaci v různých systémech. Pro zvýšení srozumitelnosti, Raft odděluje jednotlivé klíčové prvky konsenzu (např. volbu lídra, replikaci logů a bezpečnost).**
 
 ## Fungování algoritmu Raft
 
@@ -77,7 +77,7 @@ Jedná se o seznam, který v každé položce obsahuj:
 - **epochu**, ve které daný příkaz vznikl
 - samotný **příkaz**
 
-Legy jsou *perzistentní*, tedy přežijí havárii. Tj. pokud se zařízení vypnou.
+Logy jsou *perzistentní*, tedy přežijí havárii (pokud se zařízení vypnou).
 
 Dále existuje tzv. **potvrzený záznam** (*commited*). To je takový záznam, který je již potvrzený, tedy uložený již na většině zařízení.
 
@@ -128,11 +128,9 @@ Tohoto bezpečnostního požadavku dosáhneme pomocí tzv. **Bezpečnostního in
 
 #### Zpřísnění výběru lídra a nové pravidlo pro potvrzení
 
-Jelikož dosavadní logika fungování Raftu *bezpečnostní invariant negarantuje*.
+*PRVNÍ PODMÍNKA:* Jelikož dosavadní logika fungování Raftu *bezpečnostní invariant negarantuje*, snaží se Raft zvolit lídra, který má *nejúplnější log*. Tj. epochu nejvyšší epochou případně pokud mají stejnou epochu, tak s nejvyšším indexem.
 
-Proto se Raft snaží zvolit lídra, který má *nejúplnější log*. Tj. epochu nejvyšší epochou případně pokud mají stejnou epochu, tak s nejvyšším indexem.
-
-Aby lídr požadoval záznam za potvrzený musí být:
+*DRUHÁ PODMÍNKA:* Aby lídr požadoval záznam za potvrzený musí být:
 - záznam uložený na většině serverů (známe podmínku)
 - také alespoň jeden nový záznam z lídrovy aktuální epochy na většině serverů (podmínka navíc)
 
@@ -154,13 +152,13 @@ Pokud kontrola konzistence `AppendEntries` selže, sníží `nextIndex` o jednu 
 
 Je třeba řešit situaci kdy zhavaruje lídr. Např. se od něho opozdí zprávy. Později opět ožije. Jak ale zjistí, že již dále není lídrem?
 
-Řešením je to, že zařízení nepřijme zprávu s nižší epochou. Tedy pokud zařízení zachytí zprávu s nižší epochou od starého lídra, pošle mu zpátky zprávu s informací, že si má zvýšit epochu a zrušit status lídra.
+Řešením je to, že zařízení nepřijme zprávu s nižší epochou. Přesněji pokud zařízení zachytí zprávu s nižší epochou od starého lídra, pošle mu zpátky zprávu s informací, že si má zvýšit epochu a zrušit status lídra.
 
 ### 5. Interakce s klienty
 
 #### Protokol klienta
 
-Klienti posílají příkaz lídrovi. Pokud zařízení není lídrem, pošle zařízení klientovi současného lídra.
+Klienti posílají příkaz lídrovi. Pokud zařízení není lídrem, pošle zařízení klientovi současného lídra a ten již ví na koho směřovat zprávu.
 
 #### Jediné vykonání
 
@@ -179,7 +177,7 @@ Pro hezké otestování a lepší pochopení algoritmu existuje hezká stránka 
 
 [1] In Search of an Understandable Consensus Algorithm (Extended Version) | *Diego Ongaro and John Ousterhout (Stanford University)*
 
-[2] Algoritmus Raft (Michal Jakob) | *[Slideshow](https://cw.fel.cvut.cz/wiki/_media/courses/b4b36pdv/lectures/05_raft_2021.pdf)*
+[2] Algoritmus Raft (Michal Jakob CTU FEL) | *[slideshow](https://cw.fel.cvut.cz/wiki/_media/courses/b4b36pdv/lectures/05_raft_2021.pdf), [přednáška](https://www.youtube.com/watch?v=qmeDkmDHwOM&list=PLQL6z4JeTTQkQTSPDDv-FEC9T-1NxCqWK&index=8)* 
 
 ## Literatura
 
