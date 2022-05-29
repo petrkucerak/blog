@@ -152,6 +152,9 @@ Pokud kontrola konzistence `AppendEntries` selže, sníží `nextIndex` o jednu 
 
 ### 4. Neutralizace starého lídra
 
+Je třeba řešit situaci kdy zhavaruje lídr. Např. se od něho opozdí zprávy. Později opět ožije. Jak ale zjistí, že již dále není lídrem?
+
+Řešením je to, že zařízení nepřijme zprávu s nižší epochou. Tedy pokud zařízení zachytí zprávu s nižší epochou od starého lídra, pošle mu zpátky zprávu s informací, že si má zvýšit epochu a zrušit status lídra. 
 
 ## Reference
 
