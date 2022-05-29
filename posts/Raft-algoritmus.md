@@ -8,7 +8,7 @@ icon: 'ship'
 
 ---
 
-**Raft je paralelní algortimus konsezu pro správu a replikaci logů. Poskytuje stejný výsledek jako [Paxos protokol](https://en.wikipedia.org/wiki/Paxos_(computer_science)). Jeho efektivita je stejná, ale pro běžného smrteníka jednudužší na pochopení. Proto poskytuje lepší funkcionalitu a snadnější implementaci v různých systémech. Pro zvýšení srozumitelnosti, Raft odděluje jednotlivé klíčové prvky konsenzu (např. volbu lídra, repikaci logů a bezpečnost). [1]**
+**Raft je paralelní algoritmus konsenzu pro správu a replikaci logů. Poskytuje stejný výsledek jako [Paxos protokol](https://en.wikipedia.org/wiki/Paxos_(computer_science)). Jeho efektivita je stejná, ale pro běžného smrteníka jednudužší na pochopení. Proto poskytuje lepší funkcionalitu a snadnější implementaci v různých systémech. Pro zvýšení srozumitelnosti, Raft odděluje jednotlivé klíčové prvky konsenzu (např. volbu lídra, repikaci logů a bezpečnost). [1]**
 
 ## Fungování alogrimu Raft
 
@@ -154,10 +154,33 @@ Pokud kontrola konzistence `AppendEntries` selže, sníží `nextIndex` o jednu 
 
 Je třeba řešit situaci kdy zhavaruje lídr. Např. se od něho opozdí zprávy. Později opět ožije. Jak ale zjistí, že již dále není lídrem?
 
-Řešením je to, že zařízení nepřijme zprávu s nižší epochou. Tedy pokud zařízení zachytí zprávu s nižší epochou od starého lídra, pošle mu zpátky zprávu s informací, že si má zvýšit epochu a zrušit status lídra. 
+Řešením je to, že zařízení nepřijme zprávu s nižší epochou. Tedy pokud zařízení zachytí zprávu s nižší epochou od starého lídra, pošle mu zpátky zprávu s informací, že si má zvýšit epochu a zrušit status lídra.
+
+### 5. Interakce s klienty
+
+#### Protokol klienta
+
+Klienti posílají příkaz lídrovi. Pokud zařízení není lídrem, pošle zařízení klientovi současného lídra.
+
+#### Jediné vykonání
+
+Lídr může havarovat poté, co už ale vykonal příkaz před odesláním odpovědi. Exituje tedy riziko opakovaného vykonání příkazu.
+
+Řešením je, že každý příkaz má jedinečné ID příkazu. Při přijmutí příkazu, pak vždy lídr zkontroluje zdali již ID není na zařízení uloženo.
+
+## Závěr
+
+Alogoritmus Raft je jeden z nejmoderneších (2014) a vysoce využívaných paralelních algoritmů. Je implementován např. v distrubovaných databázích, které dokážou běžet nad *clustrem.*
+
+Pro hezké otestování a lepší pochopení algoritmu exituje hezká stránka s přehledem a vizualizací [raft.github.io](https://raft.github.io/).
+
 
 ## Reference
 
 [1] In Search of an Understandable Consensus Algorithm (Extended Version) | *Diego Ongaro and John Ousterhout (Stanford University)*
 
 [2] Algoritmus Raft (Michal Jakob) | *[Slideshow](https://cw.fel.cvut.cz/wiki/_media/courses/b4b36pdv/lectures/05_raft_2021.pdf)*
+
+## Literatura
+
+Ongaro, D. and Ousterhout, J.K., 2014, June. In search of an understandable consensus algorithm. In USENIX Annual Technical Conference. [link](https://www.usenix.org/system/files/conference/atc14/atc14-paper-ongaro.pdf)
