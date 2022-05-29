@@ -91,6 +91,15 @@ Dále existuje tzv. **potvrzený záznam** (*commited*). To je takový záznam, 
    - lídr pošle informaci o potvrzení svým následovníkům
    - následovníci vykonají daný příkaz
 
+Havárie následovníku se neřeší. Lídr posílá opakovaně zprávu `AppendEntries`, dokud doručení neuspěje
+
+#### Konzistence logů
+
+Algorimus Raft je efektnivní především díky *konzistenci logů*. Tedy pokud se záznamy shodují ve všech pozicích s indexy 1 až *n* obsahujících záznam se shodným číslem epochy a se shodným příkazem.
+
+Díky návrhu Raftu platí tzv. ***invarianty raftu***.
+1. Mají-li záznamy logů uložené na ruzných serverch **stejný index a epochu**, pak obsahují **stejný příkaz** a logy jsou **identické** ve všech předešlých **záznamech**.
+2. Je-li daný příkaz **potvrzený**, pak jsou potvrzeny i všechny **předchozí** logy.
 
 ## Reference
 
