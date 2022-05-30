@@ -38,6 +38,6 @@ Pokud refreshnete stránku, přijdete o dosavadní herní progress, protože str
 
 ## Projekt
 
-Projekt je v tuto chvíli ve stavu, že na něm lze ještě nemálo zapracovat. Proto se nebojte přiložit ruku k dílu a poslat nějaký commit.
+Projekt je v tuto chvíli ve stavu, že na něm lze ještě nemálo zapracovat. Proto se nebojte přiložit ruku k dílu a poslat nějaký commit ([repo](https://github.com/petrkucerak/odkryvacka)).
 
 Demo projektu si je možné vyzkoušet na: [odkryvacka.petrkucerak.cz](https://odkryvacka.petrkucerak.cz/)
