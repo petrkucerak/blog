@@ -1,8 +1,12 @@
 import Head from "next/head";
 
 export default function Meta() {
+  const descritpion = `Kůčův blog s jeho poznatky, projekty a nápady.`;
+  const author = `Petr Kučera`;
+  const mail = `petr@khome.cz`;
   return (
     <Head>
+      {/* Start of config favicon */}
       <link
         rel="apple-touch-icon"
         sizes="180x180"
@@ -24,6 +28,9 @@ export default function Meta() {
       <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#4b6b3c" />
       <meta name="msapplication-TileColor" content="#da532c" />
       <meta name="theme-color" content="#ffffff" />
+      {/* End of config favicon */}
+
+      {/* Start of config fonts */}
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link
         rel="preconnect"
@@ -47,7 +54,16 @@ export default function Meta() {
           rel="stylesheet"
         />
       </noscript>
+      {/* End of config fonts */}
+
+      {/* Start of meta tags */}
       <title>Kůčův blog</title>
+      <meta name="description" content={descritpion} />
+      <meta name="author" content={author} />
+      <meta name="medium" content="blog" />
+      <meta name="reply-to" content={mail} />
+      <meta lang="cs-cz" />
+      {/* The end of meta tags */}
     </Head>
   );
 }
