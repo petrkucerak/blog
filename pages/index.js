@@ -7,7 +7,7 @@ import Tags from "../components/tags";
 export async function getStaticProps() {
   const files = fs.readdirSync("posts");
 
-  const posts = files.map((fileName) => {
+  let posts = files.map((fileName) => {
     const slug = fileName.replace(".md", "");
     const readFile = fs.readFileSync(`posts/${fileName}`, "utf-8");
     const { data: frontmatter } = matter(readFile);
@@ -16,6 +16,11 @@ export async function getStaticProps() {
       frontmatter,
     };
   });
+
+  // sorting data by date
+  posts = posts.sort(
+    (a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
+  );
 
   return {
     props: {
