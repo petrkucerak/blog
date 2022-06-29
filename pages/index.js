@@ -38,7 +38,7 @@ export default function Home({ posts }) {
           className="m-2 overflow-hidden flex flex-col py-1 text-stone-500 hover:text-stone-900 transition-all hover:scale-105 duration-300	"
         >
           <Link href={`/post/${slug}`}>
-            <a className="p-5">
+            <a className="p-5" title={frontmatter.title}>
               <Icon icon={frontmatter.icon} />
               <h1 className="p-2 uppercase font-bold">{frontmatter.title}</h1>
               <Tags tags={frontmatter.tags} />
