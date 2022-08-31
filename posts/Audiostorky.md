@@ -21,7 +21,7 @@ Uvědomil jsem si, že pokud chceme děcka vtáhnout do děje, je na ně třeba 
 
 ## Jak audiostorky tvořím
 
-Nejsem žádný profesionální střihač ani nemám vystudovanou žádnou školu žurnalistiky. Vždy mi ale připadalo, že nejdůležitější je vychytat správný moment. Tj. když příběh graduje, musí gradovat i hudba a k tomu jsme potřeboval nějaký vhodný nástroj.
+Nejsem žádný profesionální střihač ani nemám vystudovanou žádnou školu žurnalistiky. Vždy mi ale připadalo, že nejdůležitější je vychytat správný moment. Tj. když příběh graduje, musí gradovat i hudba. K tomu jsem potřeboval vhodný nástroj.
 
 Měl jsem několik podmínek:
 
@@ -31,11 +31,11 @@ Měl jsem několik podmínek:
 - musí umět exportovat `.mp3` formát neomezené délky
 - nemá to být Audacity
 
-Po chvíli pátrání jsem objevil super službu [Soundtrap](https://www.soundtrap.com/) a začal ji využívat, protože splňovala všechny moje požadavky. Plus navíc přidala možnost spolupráce.
+Po chvíli pátrání jsem objevil super službu [Soundtrap](https://www.soundtrap.com/) a začal ji využívat, protože splňovala všechny moje požadavky. Navíc přidala možnost spolupráce.
 
 ## Moje knihovna
 
-Nahrávky nemám momnetálně nikde kompletované, ale přikládám pár odkazů na několik nahraných na soundtrap.
+Nahrávky nemám momentálně nikde kompletované. Nicméně přikládám pár odkazů na několik ukázek.
 
 <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/861791023&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/petrkucerak" title="Petr Kučera" target="_blank" style="color: #cccccc; text-decoration: none;">Petr Kučera</a> · <a href="https://soundcloud.com/petrkucerak/r-t-a-jej-p-se" title="Rút a její píseň" target="_blank" style="color: #cccccc; text-decoration: none;">Rút a její píseň</a></div>
 
