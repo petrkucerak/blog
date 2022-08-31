@@ -13,7 +13,7 @@ icon: 'anchor'
 
 ## Jak to všechno začalo
 
-S kamarády pravidelně pořádám prázdninové tábory růzyných druhů. Od celopobytových na 14 dnů až k krátkodobým příměšťákům. A právě na jednom letním vše začalo. Děckám jsme chtěli připravit zážitkovou noční hru. Inspirovali jsme se [Nocí trifidů](https://www.hranostaj.cz/hra564), v které na začátku bylo třeba spustit nouzové vysílání.
+S kamarády pravidelně pořádám prázdninové tábory různých druhů. Od celopobytových na 14 dnů až k krátkodobým příměšťákům. A právě na jednom letním vše začalo. Děckám jsme chtěli připravit zážitkovou noční hru. Inspirovali jsme se [Nocí trifidů](https://www.hranostaj.cz/hra564), v které na začátku bylo třeba spustit nouzové vysílání.
 
 ## Proč audiostorky
 
