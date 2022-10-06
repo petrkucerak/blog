@@ -1,12 +1,12 @@
 ---
 title: 'Toxická sprška'
 metaTitle: 'Jednoduchá aplikace pro hru mezi bouřky do centra Prahy.'
-date: '2022-08-20'
+date: '2022-10-06'
 tags:
   - hry
   - tabory
-  - repozitar
-icon: 'anchor'
+  - repo
+icon: 'biohazard'
 ---
 
 **Jednoduchá webová aplikace, která slouží jako podklad pro krátkou příběhovou postapokaliptickou hru určenou do centra Prahy. *Vše jsem vymýšlel a tvořil celkem narychlo, takže tu je spousta nedokonalostí. Něco ti chybí nebo bys to rád vylepšil, do toho. Budu rád!***
@@ -42,4 +42,5 @@ Druhá fáze je určena kreativitě a reflexi. Děcka mají za úkol vymyslet, j
 
 ## Zdroje
 
-Veškeré další materiály lze nalézt v repozitáři: [https://github.com/petrkucerak/game-rain](https://github.com/petrkucerak/game-rain).
+- Veškeré další materiály lze nalézt v repozitáři: [@petrkucerak/game-rain](https://github.com/petrkucerak/game-rain).
+- Hostovaná aplikace: [gamerain.petrkucerak.cz](https://gamerain.petrkucerak.cz/)
