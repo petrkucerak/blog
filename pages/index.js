@@ -40,7 +40,8 @@ export default function Home({ posts }) {
           <Link href={`/post/${slug}`}>
             <a className="p-5" title={frontmatter.title}>
               <Icon icon={frontmatter.icon} />
-              <h1 className="p-2 uppercase font-bold">{frontmatter.title}</h1>
+              <h1 className="px-2 pt-2 uppercase font-bold">{frontmatter.title}</h1>
+              <span className="px-2">{frontmatter.date}</span>
               <Tags tags={frontmatter.tags} />
             </a>
           </Link>
