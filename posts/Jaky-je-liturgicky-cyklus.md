@@ -6,7 +6,7 @@ tags:
   - repo
   - cirkev
   - shor
-icon: 'anchor'
+icon: 'recycle'
 ---
 
 **Jednoduchá PWA aplikace, která řeší můj věčný problém - mám na poslední chvíli najít žalm, nepamatuju si, jaký je liturgický cyklus. Apka běží plně offline, takže stačí stáhnout a jednou spustit, kvůli nacachování.**
