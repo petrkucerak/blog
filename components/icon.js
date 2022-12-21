@@ -6,6 +6,7 @@
 import {
   IconAnchor,
   IconBiohazard,
+  IconEye,
   IconHeadphones,
   IconRecycle,
   IconSatellite,
@@ -19,5 +20,6 @@ export default function Icon({ icon }) {
   if (icon === "anchor") return <IconAnchor className="ml-2" />;
   if (icon === "biohazard") return <IconBiohazard className="ml-2" />;
   if (icon === "recycle") return <IconRecycle className="ml-2" />;
+  if (icon === "eye") return <IconEye className="ml-2" />;
   else return <IconSatellite className="ml-2" />;
 }
