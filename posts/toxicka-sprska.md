@@ -22,6 +22,8 @@ icon: 'biohazard'
 
 *Vaším úkolem je vybudovat příbytek, který vás uchrání před nebezpečnými toxickými dešti. Dosáhnete toho ale pouze tak, že získáte suroviny, které jsou ukryté kolem vás. Polohy surovin máte vyznačené na mapě. Abyste ji vždy získali, musíte správně odpovědět na danou otázku.*
 
+![screenshot z webové aplikace](/posts/toxicka-sprska-01.png)
+
 ### Pravidla hry
 
 Cílem je si postavit příbytek v kterém půjde úspěšně přečkat toxické bouře.
