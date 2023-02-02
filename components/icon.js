@@ -8,6 +8,7 @@ import {
   IconBiohazard,
   IconEye,
   IconHeadphones,
+  IconMicrophone2,
   IconRecycle,
   IconSatellite,
   IconShip,
@@ -21,5 +22,6 @@ export default function Icon({ icon }) {
   if (icon === "biohazard") return <IconBiohazard className="ml-2" />;
   if (icon === "recycle") return <IconRecycle className="ml-2" />;
   if (icon === "eye") return <IconEye className="ml-2" />;
+  if (icon === "microphone2") return <IconMicrophone2 className="ml-2" />;
   else return <IconSatellite className="ml-2" />;
 }
