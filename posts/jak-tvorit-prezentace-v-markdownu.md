@@ -1,6 +1,6 @@
 ---
-title: 'Jak tvořit prezentace as code v markdawnu'
-metaTitle: 'Jak tvořit prezentace as code v markdawnu'
+title: 'Jak tvořit prezentace v markdawnu'
+metaTitle: 'Jak tvořit prezentace v markdawnu'
 date: '2023-01-02'
 tags:
   - prezentace
