@@ -36,7 +36,7 @@ Službu jsme ozkoušel v DEMO prostředí na stránkách služby: [https://azure
 
 ## Architektura projektu
 
-![Architektura projektu](https://raw.githubusercontent.com/petrkucerak/blog/main/public/posts/Jak-vytvorit-podcast-z-blogu-pomoci-AI_01.png)
+![Architektura projektu](/posts/jak-vytvorit-podcast-z-blogu-pomoci-AI_01.png)
 
 ### Trigger
 

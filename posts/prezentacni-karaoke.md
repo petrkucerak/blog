@@ -23,7 +23,7 @@ V rámci [studentského programu](https://www.microsoft.com/cs-cz/education/stud
 
 Dříve hra bývala hostována. Později jsem ji nemohl na internetu dohledat. Povedlo se mi ale objevit repositář, tak jsem se rozhodl hru zahostovat sám, abych vždy nemusel stahovat a spouštět lokální kopii.
 
-![sceenshot z prezentačního karaoke](/posts/Prezentacni-karaoke-01.png)
+![sceenshot z prezentačního karaoke](/posts/prezentacni-karaoke-01.png)
 
 ## Jak karaoke funguje
 
