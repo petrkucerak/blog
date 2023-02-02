@@ -11,7 +11,7 @@ icon: 'recycle'
 
 **Jednoduchá PWA aplikace, která řeší můj věčný problém - mám na poslední chvíli najít žalm, nepamatuju si, jaký je liturgický cyklus. Apka běží plně offline, takže stačí stáhnout a jednou spustit, kvůli nacachování.**
 
-| 🌐 url aplikace | [cyklus.petrkucerak.cz](cyklus.petrkucerak.cz)                                        |
+| 🌐 url aplikace | [cyklus.petrkucerak.cz](https://cyklus.petrkucerak.cz)                                        |
 | -------------- | ------------------------------------------------------------------------------------- |
 | 🔨 repo         | [/petrkucerak/jaky-cyklus](https://github.com/petrkucerak/jaky-cyklus)                |
 | GitPod         | [Gitpod ready-to-code](https://gitpod.io/#https://github.com/petrkucerak/jaky-cyklus) |
@@ -25,3 +25,4 @@ Spočítá celočíselný součet aktuálního roku. Přičte korektor. Ten se p
 - 1 => cyklus A
 - 2 => cyklus B
 
+![screenshot z webove apliakce](https://raw.githubusercontent.com/petrkucerak/blog/main/public/posts/jaky-je-liturgicky-cyklus-01.png)
