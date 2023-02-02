@@ -1,6 +1,6 @@
 ---
-title: 'Prezentace as Code'
-metaTitle: 'Prezentace as Code'
+title: 'Jak tvořit prezentace as code'
+metaTitle: 'Jak tvořit prezentace as code'
 date: '2023-01-02'
 tags:
   - prezentace
