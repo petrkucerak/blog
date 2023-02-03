@@ -6,6 +6,7 @@ tags:
   - embeded
   - IoT
   - wireless
+  - PlatformIO
 icon: 'wifi'
 ---
 
