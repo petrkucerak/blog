@@ -15,7 +15,7 @@ export default function Meta() {
       {/* End of config favicon */}
 
       {/* Start of config fonts */}
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link
         rel="preconnect"
         href="https://fonts.gstatic.com"
@@ -37,7 +37,7 @@ export default function Meta() {
           href="https://fonts.googleapis.com/css2?family=Athiti:wght@500;700&display=swap"
           rel="stylesheet"
         />
-      </noscript>
+      </noscript> */}
       {/* End of config fonts */}
 
       {/* Start of meta tags */}
