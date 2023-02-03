@@ -29,7 +29,7 @@ export async function getStaticProps({ params: { slug } }) {
 
 export default function PostPage({ frontmatter, content }) {
   return (
-    <div className="prose prose-lg prose-stone max-w-4xl w-[90vw] m-0 mx-auto">
+    <article className="prose prose-lg prose-stone max-w-4xl w-[90vw] m-0 mx-auto">
       <h1>{frontmatter.title}</h1>
       <div
         dangerouslySetInnerHTML={{
@@ -66,6 +66,6 @@ export default function PostPage({ frontmatter, content }) {
           }).render(content),
         }}
       />
-    </div>
+    </article>
   );
 }
