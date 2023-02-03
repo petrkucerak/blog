@@ -12,7 +12,7 @@ export default function Footer() {
   const now = new Date();
   return (
     <footer className="bg-stone-900 mt-8 pt-10 pb-6">
-      <div className="container mx-auto flex md:justify-center justify-around  text-white">
+      <div className="container mx-auto flex md:justify-center justify-around text-white">
         <Link
           href="mailto:petr@khome.cz"
           target="_blank"

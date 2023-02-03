@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 export default function Meta() {
-  const descritpion = `Kůčův blog s jeho poznatky, projekty a nápady.`;
+  const descritpion = `Můj blog s projektíky, hrami, bastlárnami a zkrátka se vším, co mě napadne!`;
   const author = `Petr Kučera`;
   const mail = `petr@khome.cz`;
   const blogName = `Kůčův blog`;
