@@ -37,7 +37,7 @@ export async function getStaticProps({ params: { slug } }) {
 
 export default function PostPage({ frontmatter, content }) {
   return (
-    <article className="prose prose-lg prose-stone max-w-4xl w-[90vw] m-0 mx-auto">
+    <article className="prose lg:prose-base md:prose-lg prose-xl prose-stone max-w-4xl w-[90vw] m-0 mx-auto">
       <h1 dangerouslySetInnerHTML={{ __html: frontmatter.title }} />
       <div
         dangerouslySetInnerHTML={{
