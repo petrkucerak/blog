@@ -3,7 +3,7 @@ import "../styles/globals.css";
 import { Athiti } from "@next/font/google";
 
 const athiti = Athiti({
-  weight: ["500", "700"],
+  weight: ["500", "700", "300", "600"],
   subsets: ["latin-ext", "latin"],
 });
 

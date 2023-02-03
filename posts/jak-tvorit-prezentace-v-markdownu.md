@@ -1,5 +1,5 @@
 ---
-title: 'Jak tvořit prezentace v markdawnu'
+title: 'Jak tvořit prezentace v&nbsp;markdawnu'
 metaTitle: 'Jak tvořit prezentace v markdawnu'
 date: '2023-01-02'
 tags:
