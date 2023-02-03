@@ -50,7 +50,7 @@ export default function PostPage({ frontmatter, content }) {
           ? `Naposledy upraveno: ${frontmatter.updated}`
           : null}
         {frontmatter.updated === null || frontmatter.updated === undefined
-          ? `Publikováno: ${frontmatter.date}`
+          ? `Zveřejněno: ${frontmatter.date}`
           : null}
       </span>
       <div className="ml-[-10px] text-base">
