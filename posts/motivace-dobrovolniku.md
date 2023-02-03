@@ -101,89 +101,79 @@ Opakem je **neformální dobrovolník**. Tím označuji člověka, který neuzav
 
 Obecně můžeme tvrdit, že se počty dobrovolníků zvyšují, a to ve všech oblastech. Zajímavé pro nás může být srovnání procentuálního rozdělení dobrovolníků do sektorů mezi pro roky 2008 a 1991. 
 
-| OBLAST                                                                                                            | 1991 [%] | 2008 [%] |
-| ----------------------------------------------------------------------------------------------------------------- | -------- | -------- |
-| org. zabývající se službami pro přestárlé, postižené, jinak znevýhodněné                                          | 2        | 4        |
-| náboženská nebo církevní org.                                                                                     | 2        | 3        |
-| org. zabývající se vzděláním, uměleckými, hudebními nebo kulturními aktivitami                                    | 2        | 5        |
-| odbory                                                                                                            | 6        | 3        |
-| politická strana či hnutí                                                                                         | 2        | 2        |
-| org. zabývající se činností v místě bydliště, chudobou, zaměstnaností, bydlením nebo rasovou nesnášenlivostí      | 1        | 2        |
-| org. zabývající se rozvojem třetího světa nebo lidskými právy                                                     | 0        | 1        |
-| org. zabývající se ochranou životního prostředí, ekologického hnutí nebo pro organizace zaměřenou na práva zvířat | 3        | 4        |
-| sdružení podle povolání či profesní asociace                                                                      | 2        | 2        |
-| org. zabývající se prací s mládeží (např. vedení skautů)                                                          | 3        | 4        |
-| org. zaměřenou na sport nebo zábavu                                                                               | 7        | 11       |
-| org. žen nebo pro ženské hnutí                                                                                    | 1        | 2        |
-| mírové hnutí                                                                                                      | 0        | 1        |
-| dobrovolná organizace v oblasti zdraví                                                                            | 3        | 2        |
-| jiná organizace                                                                                                   | 4        | 4        |
+| **OBLAST**                                                                                                             | **1991&nbsp;[%]** | **2008&nbsp;[%]** |
+| ---------------------------------------------------------------------------------------------------------------------- | ----------------- | ----------------- |
+| org. zabývající se službami pro přestárlé, postižené, jinak znevýhodněné                                               | 2                 | 4                 |
+| náboženská nebo církevní org.                                                                                          | 2                 | 3                 |
+| org. zabývající se vzděláním, uměleckými, hudebními nebo kulturními aktivitami                                         | 2                 | 5                 |
+| ==odbory==                                                                                                             | ==6==             | ==3==             |
+| politická strana či hnutí                                                                                              | 2                 | 2                 |
+| org. zabývající se činností v místě bydliště, chudobou, zaměstnaností, bydlením nebo rasovou nesnášenlivostí           | 1                 | 2                 |
+| org. zabývající se rozvojem třetího světa nebo lidskými právy                                                          | 0                 | 1                 |
+| org. zabývající se ochranou životního prostředí, ekologického hnutí nebo pro organizace zaměřenou na&nbsp;práva zvířat | 3                 | 4                 |
+| sdružení podle povolání či profesní asociace                                                                           | 2                 | 2                 |
+| org. zabývající se prací s mládeží (*např. vedení skautů*)                                                             | 3                 | 4                 |
+| org. zaměřenou na sport nebo zábavu                                                                                    | 7                 | 11                |
+| org. žen nebo pro ženské hnutí                                                                                         | 1                 | 2                 |
+| mírové hnutí                                                                                                           | 0                 | 1                 |
+| ==dobrovolná organizace v oblasti zdraví==                                                                             | ==3==             | ==2==             |
+| jiná organizace                                                                                                        | 4                 | 4                 |
 
-Zdroj dat12 
+*Zdroj dat*&nbsp;[^dvanact]
+
+[^dvanact]: HODNOTY A POSTOJE V ČR 1991–2008 (pramenná publikace European Values Study) 2009 sestavili Rabušic L., Hamanová  J. 1. vyd. Brno: Masarykova univerzita, 2009. ISBN 978-80-2104-952-9
+
 
 Tabulka ukazuje, že až na dva sektory zaznamenáváme růst počtu dobrovolníků v čase. Konkrétně se jedná o odbory a oblast zdraví. Osobně si menší angažovanost v odborech vysvětluji negativním obrazem, který dlouhodobě utváří média. 
 
-4. Motivace 
+## 4. Motivace
 
 Existuje spousta motivačních teorií. V tomto paperu se jim ale podrobně věnovat nechci. Postačí nám vycházet z předpokladu, že člověk chce být v životě spokojený. Motivuje ho to, co ho činí šťastným, respektive co uspokojuje jeho potřeby. 
 
-4.1. Šest kategorií motivů 
+### 4.1. Šest kategorií motivů 
 
 Gil Clary, Mark Snyder a jejich kolegové roku 1998 přišli s názorem, že vykonávání dobrovolnické činnosti může různým dobrovolníkům přinášet naplnění jejich různých potřeb. 
 
 Konkrétně specifikovali 6 základních kategorií motivů, které dobrovolnická činnost naplňuje: 
 
-Hodnoty (values) – Umožňuje dobrovolníkovi vytvářet hodnoty spojené s altruistickým či prosociálním zájmem o druhé lidi. 
+- **Hodnoty** (*values*) – Umožňuje dobrovolníkovi vytvářet hodnoty spojené s altruistickým či prosociálním zájmem o druhé lidi. 
+- **Porozumění** (*understanding*) – Díky dobrovolnické činnosti mohou dobrovolníci získávat nové zkušenosti, zažívat nové situace a osvojovat si specifické dovednosti. 
+- **Sociální funkce** (*social*) – Možnost trávit čas s ostatními lidmi, patřit do kolektivu či party. Často také souvisí s pomocí v rodině či společenským očekáváním. 
+- **Kariéra** (*carier*) – Díky dobrovolnické činnosti může dobrovolník získat kontakty, které se mu budou hodit v budoucí kariéře či pokud se osvědčí, může být danou organizací zaměstnán.
+- **Protektivní (ochranná) funkce** (*protective*) – Tento motiv slouží k ochraně vlastního ega. Respektive snižování pocitu viny, respektive pocitu toho, že má dobrovolník více štěstí než lidé, kterým pomáhá.
+- **Posílení (Rozvoj, Osobní růst)** (*enhancement*) – Díky své činnosti dobrovolník posiluje svoje ego. Získává sebeúctu a sebevědomí. 
 
-Porozumění (understanding) – Díky dobrovolnické činnosti mohou dobrovolníci získávat nové zkušenosti, zažívat nové situace a osvojovat si specifické dovednosti. 
-
-Sociální funkce (social) – Možnost trávit čas s ostatními lidmi, patřit do kolektivu či party. Často také souvisí s pomocí v rodině či společenským očekáváním. 
-
-Kariéra (carier) – Díky dobrovolnické činnosti může dobrovolník získat kontakty, které se mu budou hodit v budoucí kariéře či pokud se osvědčí, může být danou organizací zaměstnán. 
-
-Protektivní (ochranná) funkce (protective) – Tento motiv slouží k ochraně vlastního ega. Respektive snižování pocitu viny, respektive pocitu toho, že má dobrovolník více štěstí než lidé, kterým pomáhá. 
-
-Posílení (Rozvoj, Osobní růst) (enhancement) – Díky své činnosti dobrovolník posiluje svoje ego. Získává sebeúctu a sebevědomí. 
-
-4.2. Vztah organizace a dobrovolníka 
+### 4.2. Vztah organizace a dobrovolníka
 
 Vnímám také jako velice důležité vysvětlit, co může organizaci jakéhokoliv typu přinést přítomnost dobrovolníků a naopak. 
 
-4.2.1 Přínos dobrovolníka organizaci 
+#### 4.2.1 Přínos dobrovolníka organizaci 
 
-Zpětná vazba – Příchod lidí z venku, kteří nejsou zatíženi znalostí procesů a prostředí organizace může přinést zpětnou vazbu. 
+- **Zpětná vazba** – Příchod lidí z venku, kteří nejsou zatíženi znalostí procesů a prostředí organizace může přinést zpětnou vazbu. 
+- **Různorodost** – Dobrovolníci přichází z rozlišných prostředí s různým vzděláním. To poskytuje obrovský rozhled a různorodé přístupy. 
+- **Psychika zaměstnanců** – Přítomnost dobrovolníků může mít pozitivní vliv na psychiku zaměstnanců. Může přinést novou vlnu nadšení, optimizmu a nového elánu. 
+- **Test funkčnosti organizace** – Podle Tošnera příchod dobrovolníků do organizace je výborným testem její funkčnosti. V organizacích, kde správně nefunguje komunikace, dobrovolnictví velice brzy skončí. Naopak pokud dobrovolníci přijdou do otevřené a přátelské atmosféry, může jejich příchod přinést např. nové nápady. 
+- **Finance** – Pokud bude ubývat zaměstnanců, mohou se změnit finanční náklady organizace. Dobrovolníci ale nejsou charita.&nbsp;[^trinact]
 
-Různorodost – Dobrovolníci přichází z rozlišných prostředí s různým vzděláním. To poskytuje obrovský rozhled a různorodé přístupy. 
+[^trinact]:  viz mýty v kapitole ++2.4 Mýty o dobrovolnictví++
 
-Psychika zaměstnanců – Přítomnost dobrovolníků může mít pozitivní vliv na psychiku zaměstnanců. Může přinést novou vlnu nadšení, optimizmu a nového elánu. 
+#### 4.2.2 Přínos organizace dobrovolníkovi 
 
-Test funkčnosti organizace – Podle Tošnera příchod dobrovolníků do organizace je výborným testem její funkčnosti. V organizacích, kde správně nefunguje komunikace, dobrovolnictví velice brzy skončí. Naopak pokud dobrovolníci přijdou do otevřené a přátelské atmosféry, může jejich příchod přinést např. nové nápady. 
+- **Zázemí** – Pokud dobrovolník svou činnost vykonává pod organizací získává zázemí organizace, které mu typicky poskytuje:
+  - materiální zázemí (prostory, materiály, …), 
+  - právní zázemí (smlouvy, pojistka, GDPR, …), 
+  - sociální a psychologické zázemí (supervize, možnost konzultací, …), 
+  - finanční pomoc (nákup spotřebního materiálu, …),
+  - atd. 
+- **Rozvoj** – Dobrovolník typicky díky členství v organizaci získává pravidelná školení, možnost osobního rozvoje na specializovaných přednáškách či osobní supervize, které jsou organizací poskytovány zadarmo. 
 
-Finance – Pokud bude ubývat zaměstnanců, mohou se změnit finanční náklady organizace. Dobrovolníci ale nejsou charita.13 
-
-4.2.2 Přínos organizace dobrovolníkovi 
-
-Zázemí – Pokud dobrovolník svou činnost vykonává pod organizací získává zázemí organizace, které mu typicky poskytuje: 
-
-materiální zázemí (prostory, materiály, …), 
-
-právní zázemí (smlouvy, pojistka, GDPR, …), 
-
-sociální a psychologické zázemí (supervize, možnost konzultací, …), 
-
-finanční pomoc (nákup spotřebního materiálu, …), 
-
-atd. 
-
-Rozvoj – Dobrovolník typicky díky členství v organizaci získává pravidelná školení, možnost osobního rozvoje na specializovaných přednáškách či osobní supervize, které jsou organizací poskytovány zadarmo. 
-
-5. Organizace dobrovolníků 
+## 5. Organizace dobrovolníků 
 
 V poslední kapitole bych rád zdůraznil několik základních pravidel vycházejících z mé zkušenosti organizace dobrovolníků. 
 
-5.1. Koordinátor dobrovolníků 
+### 5.1. Koordinátor dobrovolníků
 
-Domnívám se, že nejdůležitějším prvkem dobře fungující dobrovolnické organizace je mít tzv. koordinátora dobrovolníků. Jeho rolí je být velícím důstojníkem, pečujícím rodičem, povzbuzujícím kamarádem, zkrátka dobrým manažerem, který pečuje o potřeby dobrovolníka. Má za úkol kromě motivace předávat instrukce a neustále se ujišťovat, že dobrovolník rozumí svému úkolů a je s ním ztotožněn. Díky němu je o každého pečováno individuálně. 
+Domnívám se, že nejdůležitějším prvkem dobře fungující dobrovolnické organizace je mít tzv. ***koordinátora dobrovolníků***. Jeho rolí je být velícím důstojníkem, pečujícím rodičem, povzbuzujícím kamarádem, zkrátka dobrým manažerem, který pečuje o potřeby dobrovolníka. Má za úkol kromě motivace předávat instrukce a neustále se ujišťovat, že dobrovolník rozumí svému úkolů a je s ním ztotožněn. Díky němu je o každého pečováno individuálně. 
 
 Role koordinátora je velice důležitá nejen k motivaci dobrovolníka, ale i k informovanosti organizace o stavu dobrovolníka. Organizace musí totiž mít neustálý přehled, do jakého projektu může s daným dobrovolníkem počítat. Zdali je vhodné ho momentálně více angažovat nebo ho nechat spíše odpočinout. 
 
@@ -191,63 +181,49 @@ V organizaci se ale také nesmí zapomínat na samotného koordinátora. Je tře
 
 Věřím, že u koordinátorů ale i dobrovolníků ve většině případů je mnohem důležitější kvalita než kvantita. Protože jeden špatný nebo toxický dobrovolník může způsobit hodně škody. 
 
-5.2. Předpoklady k dobrému fungování dobrovolnické organizace 
+### 5.2. Předpoklady k dobrému fungování dobrovolnické organizace 
 
 Řízení dobrovolnické organizace se v jádru neliší od řízení firmy. Rozdíl ke ve způsobech a nástrojích, které jsou používány. Pojďme vyzdvihnout několik zásad, oblastí a trendů, kterým se je v dobrovolnické organizaci věnovat. 
 
-Specifikace rolí – Aby mohla organizace fungovat, je třeba mít jasně stanovené role, zodpovědnosti a vzájemná očekávání. Ve firmě má zaměstnance většinou díky smlouvě vše zadáno. V dobrovolnických organizacích tomu ale tak často není. Plyne z toho spousta neefektivní komunikace a zbytečných nedorozumění. 
+**Specifikace rolí** – Aby mohla organizace fungovat, je třeba mít jasně stanovené role, zodpovědnosti a vzájemná očekávání. Ve firmě má zaměstnance většinou díky smlouvě vše zadáno. V dobrovolnických organizacích tomu ale tak často není. Plyne z toho spousta neefektivní komunikace a zbytečných nedorozumění. 
 
-Onboarding – V dobrovolnických organizacích dobrovolníci cirkulují mnohem rychleji než zaměstnanci ve firmách. S tím, je také třeba počítat. Zaučení nováčků může být zdlouhavé a neefektivní. Často je třeba předat dobrovolníkovi větší množství informací. To ho ale může značně zatížit, ne-li odradit. Proto je třeba mít dobře promyšlený a naplánovaný celý zaučovací proces. Také je vhodné pamatovat na neustálé shánění nových pomocných sil. 
+**Onboarding** – V dobrovolnických organizacích dobrovolníci cirkulují mnohem rychleji než zaměstnanci ve firmách. S tím, je také třeba počítat. Zaučení nováčků může být zdlouhavé a neefektivní. Často je třeba předat dobrovolníkovi větší množství informací. To ho ale může značně zatížit, ne-li odradit. Proto je třeba mít dobře promyšlený a naplánovaný celý zaučovací proces. Také je vhodné pamatovat na neustálé shánění nových pomocných sil. 
 
-Koordinátor, supervize – Jak jsem již specifikoval v předchozí kapitole. Domnívám se, že role koordinátora je nezastupitelná. Díky němu dobrovolník pociťuje individuální přístup a organizace ví o každém. Nemůže docházet k tomu, že by se nějaký dobrovolník někde ztratil. Také snižuje šanci toho, že by dobrovolník se svojí činností ze dne na den seknul, protože koordinátor tuší, co momentálně prožívá. 
+**Koordinátor, supervize** – Jak jsem již specifikoval v předchozí kapitole. Domnívám se, že role koordinátora je nezastupitelná. Díky němu dobrovolník pociťuje individuální přístup a organizace ví o každém. Nemůže docházet k tomu, že by se nějaký dobrovolník někde ztratil. Také snižuje šanci toho, že by dobrovolník se svojí činností ze dne na den seknul, protože koordinátor tuší, co momentálně prožívá. 
 
-Připravenost organizace – Aby mohli v synergii dobře fungovat dobrovolníci a zaměstnanci, je třeba celý chod organizace tomuto modelu přizpůsobit. Připravit zaměstnance (např. konflikt platu zaměstnanců a dobrovolníků i když spolupracují na stejných projektech a dělají stejnou činnost) a připravit systém (mít dobrou IT podporu, vhodně nastavené procesy, ...). 
+**Připravenost organizace** – Aby mohli v synergii dobře fungovat dobrovolníci a zaměstnanci, je třeba celý chod organizace tomuto modelu přizpůsobit. Připravit zaměstnance (např. konflikt platu zaměstnanců a dobrovolníků i když spolupracují na stejných projektech a dělají stejnou činnost) a připravit systém (mít dobrou IT podporu, vhodně nastavené procesy, ...). 
 
-5.3. Shrnutí pravidel 
+### 5.3. Shrnutí pravidel
 
-V závěru si dovolím citovat Tošnera a Sozanské,14 kteří krásně shrnují, co dobrovolníka podporuje a co naopak ne. 
+V závěru si dovolím citovat Tošnera a Sozanské,&nbsp;[^ctrnact] kteří krásně shrnují, co dobrovolníka podporuje a co naopak ne.
 
-Dobrovolníky brzdí když: 
+[^ctrnact]: TOŠNER, J., SOZANSKÁ O. 2006. Dobrovolníci a metodika práce s nimi v organizacích. Praha: Portál.
 
-zjistí velký rozdíl mezi očekáváním a skutečností 
+**Dobrovolníky brzdí když:**
 
-mají pocit, že je jejich pomoc k ničemu 
+- zjistí velký rozdíl mezi očekáváním a skutečností 
+- mají pocit, že je jejich pomoc k ničemu 
+- nedostávají zpětnou vazbu, ocenění či pochvalu 
+- je jejich práce rutinní 
+- nejsou podporováni svými spolupracovníky 
+- jim úkol či tým nepřináší prestiž 
+- díky dobrovolné činnosti nedochází k osobnímu růstu 
+- nemají příliš možnost projevit iniciativu či tvořivost 
+- panuje mezi spolupracovníky napětí 
 
-nedostávají zpětnou vazbu, ocenění či pochvalu 
+**Dobrovolníky podporuje když:**
 
-je jejich práce rutinní 
+- mají pocit, že jsou oceňováni 
+- si uvědomují, že jejich přítomnost něco znamená 
+- mají naděje na změnu a postup ve své činnosti 
+- se jim dostává uznání na veřejnosti i soukromě 
+- mají pocit, že zvládnou předložené úkoly 
+- mají pocit sounáležitosti a týmové spolupráce se spolupracovníky 
+- se podílejí na rozhodování, řešení problémů a stanovování cílů organizace 
+- jsou uspokojovány jejich osobní potřeby 
+- mají pocit, že díky jejich činnosti se děje něco důležitého 
 
-nejsou podporováni svými spolupracovníky 
-
-jim úkol či tým nepřináší prestiž 
-
-díky dobrovolné činnosti nedochází k osobnímu růstu 
-
-nemají příliš možnost projevit iniciativu či tvořivost 
-
-panuje mezi spolupracovníky napětí 
-
-Dobrovolníky podporuje když: 
-
-mají pocit, že jsou oceňováni 
-
-si uvědomují, že jejich přítomnost něco znamená 
-
-mají naděje na změnu a postup ve své činnosti 
-
-se jim dostává uznání na veřejnosti i soukromě 
-
-mají pocit, že zvládnou předložené úkoly 
-
-mají pocit sounáležitosti a týmové spolupráce se spolupracovníky 
-
-se podílejí na rozhodování, řešení problémů a stanovování cílů organizace 
-
-jsou uspokojovány jejich osobní potřeby 
-
-mají pocit, že díky jejich činnosti se děje něco důležitého 
-
-6. Reference a zdroje 
+## 6. Reference a zdroje 
 
 KUSÁKOVÁ, Bc. Olga. Analýza motivace dobrovolníků [online]. Praha, 2011 [cit. 2022-11-01]. Dostupné z: https://hest.cz/cdn/public/90kusakova2011.pdf. Diplomová práce. Vysoká škola ekonomická v Praze. Vedoucí práce PhDr. Daniela Pauknerová, Ph.D. 
 
