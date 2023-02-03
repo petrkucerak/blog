@@ -58,13 +58,15 @@ Funguje tak, že:
 3. *V případě veze MCU s displejem, **inicializuje displej** a&nbsp;vypíše na něj vlastni MAC adresu.*
 4. **Ukončí inicializační metodu**. *V případě MCU bez displaje ohlásí konec konfigurace
 bliknutím červené LED diody, která je vestavěné na desce.*
-1. **Spustí měření**, které má za úkol simulovat reálný provoz. Zde je možné konfigurovat základní parametry. Program **měří round-time trip**. Respektive dobu, poslání
+5. **Spustí měření**, které má za úkol simulovat reálný provoz. Zde je možné konfigurovat základní parametry. Program **měří round-time trip**. Respektive dobu, poslání
 informace ze&nbsp;zařízení A, jejího uložení do&nbsp;patřičné struktury v&nbsp;zařízení B, odeslání zpět
 do&nbsp;zařízení A a&nbsp;uložení do&nbsp;patřičné struktury v&nbsp;zařízení A. Pokud se informace nevrátí
 ze&nbsp;zařízení B do&nbsp;určitého deadlinu, zařízení A registruje zprávu jako chybovou a&nbsp;odesílá
 rovnou další. *V případě použití MCU s&nbsp;displejem, je proces měření zobrazován ve&nbsp;formě
 progress baru.*
-1. Po ukončení měření, **se data vypíšou** do konzole pro následné zpracování.
+6. Po ukončení měření, **se data vypíšou** do konzole pro následné zpracování.
+
+*Veškeré kódy jsou dostupné v [repozitáři](https://github.com/petrkucerak/rafting-button/) na mém GitHubu.*
 
 [^uno]: Jako je například `ESP_NOW_HANDLER`.
 
@@ -176,12 +178,37 @@ Scénář D byl oproti ostatním měřením odlišný v tom, že jsem se nejprve
 
 ![graf D1](/posts/images/vlastnosti-protokolu-esp-now/ScenarioD-graph.png)
 
-Při měření jsme zjistil, že při odesílání na velikou vzdálenost je třeba dbát na orientaci čipu. Pokud nebylo zařízení správně natočeno, nešlo odeslat žádné zprávy.
+Při měření jsme zjistil, že při odesílání na velikou vzdálenost je třeba **dbát na orientaci čipu**. Pokud nebylo zařízení správně natočeno, nešlo odeslat žádné zprávy.
 
-Výsledek měření je vizualizován grafem D1. Při tomto scénáři bylo ovšem mnohem zajímavjěíš pozorovat četnost úplné ztráty dat.
+Výsledek měření je vizualizován grafem D1. Při tomto scénáři bylo ovšem mnohem zajímavjěíš pozorovat **četnost úplné ztráty** dat. Při odeslání 1000 zpráv, se ztratilo 50. Můžeme tedy jednoduchým výpočtem zjistit, jaká je procentuální ztrátovost na dlouhé vzdálenosti.
 
-Při odeslání 1000 zpráv, se ztratilo 50. Můžeme tedy jednoduchým výpočtem zjistit jaká je procentuální ztrátovost na dlouhé vzdálenosti.
+$$$
+loss = err / sent
+$$$
 
-loss = error / sent
+V našem případě se při odeslání 1000 zpráv objevilo 50 chyb. Pro chybovost tedy platí:
 
-V našem případě se při odeslání 1000 zpráv objevilo 50 chyb. Chybovost je tedy 5~\%.\fnote{$50/1000 = 0,05$}.
+$$$
+50/1000 = 0,05 = loss
+$$$
+
+## Závěř
+
+Veškerá naměřená data se skripty pro vyrenderováni grafů je možné najít v [**repositáři**](https://github.com/petrkucerak/rafting-button/tree/main/measure).
+
+Uvědomuji si, že **měření nebylo** prováděno **za ideálních podmínek**. Přesnost měření
+mohlo ovlivnit především to, že:
+- se jeden čipů měl větší odběr proudu a mírně se při měření přehříval,
+- větší vzdálenosti byly měřeny s přesností na jednotky metrů a největší vzdálenosti s přesností na 10 m,
+- les nebyl absolutně odstíněný od 2,4 GHz,
+- během měření různých scénářů jsme upravoval kód,
+- v některých scénářích by větší množství dat, mohlo říci více.
+
+Zajímavé jsou ještě 2 výše zmíněné poznání. Konkrétně to, že **při přenosu na delší
+vzdálenost je nutné**, aby signálu **nebránilo nic v cestě** a aby byly moduly **správně
+orientovány**.
+
+Výsledky mi prokázali, že protokol ESP-NOW splňuje očekávané požadavky a je
+vhodný pro použití v budoucí implementaci.
+
+***Všechna data tohoto článku, jsou vytažena z části mé bakalářské práce, respektive samonstatného projektu, který je dostupný na mém [GitHubu](https://github.com/petrkucerak/rafting-button/)***.

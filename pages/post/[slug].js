@@ -10,6 +10,7 @@ import container_plugin from "markdown-it-container";
 import deflist_plugin from "markdown-it-deflist";
 import ins_plugin from "markdown-it-ins";
 import mark_plugin from "markdown-it-mark";
+import math_plugin from "markdown-it-math";
 
 export async function getStaticPaths() {
   const files = fs.readdirSync("posts");
@@ -80,6 +81,7 @@ export default function PostPage({ frontmatter, content }) {
             .use(deflist_plugin)
             .use(ins_plugin)
             .use(mark_plugin)
+            .use(math_plugin)
             .render(content),
         }}
       />
