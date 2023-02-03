@@ -2,6 +2,14 @@ import fs from "fs";
 import matter from "gray-matter";
 import md from "markdown-it";
 import hljs from "highlight.js";
+import footnote_plugin from "markdown-it-footnote";
+import sub_plugin from "markdown-it-sub";
+import sup_plugin from "markdown-it-sup";
+import abbr_plugin from "markdown-it-abbr";
+import container_plugin from "markdown-it-container";
+import deflist_plugin from "markdown-it-deflist";
+import ins_plugin from "markdown-it-ins";
+import mark_plugin from "markdown-it-mark";
 
 export async function getStaticPaths() {
   const files = fs.readdirSync("posts");
@@ -30,7 +38,7 @@ export async function getStaticProps({ params: { slug } }) {
 export default function PostPage({ frontmatter, content }) {
   return (
     <article className="prose prose-lg prose-stone max-w-4xl w-[90vw] m-0 mx-auto">
-      <h1 dangerouslySetInnerHTML={{__html: frontmatter.title}}/>
+      <h1 dangerouslySetInnerHTML={{ __html: frontmatter.title }} />
       <div
         dangerouslySetInnerHTML={{
           __html: md({
@@ -63,7 +71,16 @@ export default function PostPage({ frontmatter, content }) {
 
               return ""; // use external default escaping
             },
-          }).render(content),
+          })
+            .use(footnote_plugin)
+            .use(sub_plugin)
+            .use(sup_plugin)
+            .use(abbr_plugin)
+            .use(container_plugin)
+            .use(deflist_plugin)
+            .use(ins_plugin)
+            .use(mark_plugin)
+            .render(content),
         }}
       />
     </article>
