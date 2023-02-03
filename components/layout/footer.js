@@ -6,10 +6,12 @@ import {
   IconBrandReddit,
   IconMail,
 } from "@tabler/icons";
+import { now } from "lodash";
 import Link from "next/link";
 export default function Footer() {
+  const now = new Date();
   return (
-    <footer className="bg-stone-900 mt-8 py-20">
+    <footer className="bg-stone-900 mt-8 pt-10 pb-6">
       <div className="container mx-auto flex justify-center text-white">
         <Link
           href="mailto:petr@khome.cz"
@@ -65,6 +67,9 @@ export default function Footer() {
         >
           <IconBrandReddit />
         </Link>
+      </div>
+      <div className="text-white font-light text-sm flex justify-center mt-5">
+        <p>&#169; 2022 - {now.getFullYear()}</p>
       </div>
     </footer>
   );
