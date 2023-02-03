@@ -21,6 +21,6 @@ icon: 'eye'
 
 V repositáři najdete zdrojové kódy v markdownu pro **doprovodnou prezentaci**, kterou je možné generovat pomocí frameworku [marp](https://marp.app/). Vše se nachází ve složce `slideshow`.
 
-![screenshot repositáře na GitHubu](https://raw.githubusercontent.com/petrkucerak/blog/main/public/posts/azure-AI-workshop-01.png)
+![screenshot repositáře na GitHubu](/posts/images/azure-AI-workshop-01.png)
 
 V složce `demo` se nacházejí soubory pro 3 ukázková dema, konkrétně **text2speech**, kde je cílem z článku vygenerovat podcast, **custom-vision** snažícího se o vycvičení modelu AI pro rozeznání jedlých hub od nejedlých a **computer-vision** implementující jednoduché OCR.

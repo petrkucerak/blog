@@ -33,7 +33,7 @@ Měl jsem několik podmínek:
 
 Po chvíli pátrání jsem objevil super službu [Soundtrap](https://www.soundtrap.com/) a začal ji využívat, protože splňovala všechny moje požadavky. Navíc přidala možnost spolupráce.
 
-![screensho prace v Soundtrapu](https://raw.githubusercontent.com/petrkucerak/blog/main/public/posts/audiostorky-01.png)
+![screenshot prace v Soundtrapu](/posts/images/audiostorky-01.png)
 
 ## Moje knihovna
 

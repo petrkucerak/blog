@@ -20,7 +20,7 @@ Po rychlém googlení mi vypadlo několik možností. Nejvhodnější mi ale př
 
 Framework nabízí několik základních šablon a umožňuje dostylování pomocí css tříd. Řešení má ale i své limity. Nelze provádět pokročilejší formátování. Při větším množství informací obsah přeteče slide.
 
-![Využití rozšíření Marp pro VS Code](https://raw.githubusercontent.com/petrkucerak/blog/main/public/posts/jak-tvorit-prezentace-as-code-v-markdownu-01.png)
+![Využití rozšíření Marp pro VS Code](/posts/images/jak-tvorit-prezentace-as-code-v-markdownu-01.png)
 
 Po tvorbě prezentace je možné slideshow exportovat přímo z VS Code [díky rozšíření](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode) hned do několika formátů, jako je `.pdf`, `.pptx` či `.html`. Nejzajímavější pro mne bylo využití html prezentace, která umožňuje všechny módy prezentace jako *PowerPoint*. Tj. zobrazení poznámek pro přednášejícího, rozdělení okna pro prezentujícího a pro zobrazení prezentace.
 

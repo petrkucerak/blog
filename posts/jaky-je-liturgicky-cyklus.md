@@ -25,4 +25,4 @@ Spočítá celočíselný součet aktuálního roku. Přičte korektor. Ten se p
 - 1 => cyklus A
 - 2 => cyklus B
 
-![screenshot z webove apliakce](https://raw.githubusercontent.com/petrkucerak/blog/main/public/posts/jaky-je-liturgicky-cyklus-01.png)
+![screenshot z webove apliakce](/posts/images/jaky-je-liturgicky-cyklus-01.png)

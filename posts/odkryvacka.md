@@ -36,7 +36,7 @@ Můžete kliknout na ***odhal***, pokud chcete celý obrázek nezakrytý. Pro p�
 
 Pokud refreshnete stránku, přijdete o dosavadní herní progress, protože stránka funguje pouze v js prohlížeče.
 
-![screensho aplikace](https://raw.githubusercontent.com/petrkucerak/blog/main/public/posts/odkryvacka-01.png)
+![screensho aplikace](/posts/images/odkryvacka-01.png)
 
 ## Projekt
 
