@@ -47,7 +47,7 @@ export default function PostPage({ frontmatter, content }) {
           //
           // For example, you can use '«»„“' for Russian, '„“‚‘' for German,
           // and ['«\xA0', '\xA0»', '‹\xA0', '\xA0›'] for French (including nbsp).
-          quotes: '“”‘’',
+          quotes: '„“‚‘',
 
           // Highlighter function. Should return escaped HTML,
           // or '' if the source string is not changed and should be escaped externally.
