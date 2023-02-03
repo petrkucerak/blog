@@ -46,7 +46,7 @@ export default function PostPage({ frontmatter, content }) {
         title={frontmatter.title}
         description={frontmatter.description}
         canonical={`https://blog.petrkucerak.cz/post/${frontmatter.slug}`}
-        oepnGraph={{
+        openGraph={{
           title: frontmatter.title,
           description: frontmatter.description,
           url: `https://blog.petrkucerak.cz/post/${frontmatter.slug}`,
@@ -54,6 +54,11 @@ export default function PostPage({ frontmatter, content }) {
           article: {
             publishedTime: `${frontmatter.date}T16:30:00`,
           },
+        }}
+        twitter={{
+          site: "@petrkucerak",
+          handle: "@petrkucerak",
+          cardType: "summary_large_image",
         }}
       />
       <h1
