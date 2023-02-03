@@ -43,7 +43,7 @@ export default function PostPage({ frontmatter, content }) {
     <article className="prose prose-lg prose-stone max-w-4xl w-[90vw] m-0 mx-auto">
       <h1
         dangerouslySetInnerHTML={{ __html: frontmatter.title }}
-        className="mb-0"
+        className="mb-1"
       />
       <Tags tags={frontmatter.tags} />
       <div

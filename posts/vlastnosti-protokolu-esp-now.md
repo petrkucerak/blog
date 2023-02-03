@@ -9,7 +9,7 @@ tags:
 icon: 'wifi'
 ---
 
-**Jedním z problémů, který jsem řešil během práce na samostatném projektu v rámci studia na univerzitě bylo vybudování bezdrátové sítě, která by umožňovala propojit moduly používající *IEEE 802.11* (Wifi) na druhé vrstvě, tj.&nbsp;adresovat pomocí mac adres a informace balit do ethernet *framů*. A následně změřit vlastnosti, které takto vybudovaná infrastruktura bude mít.**
+**Jedním z problémů, který jsem řešil během práce na samostatném projektu v rámci studia na univerzitě bylo vybudování bezdrátové sítě, která by umožňovala propojit moduly používající *IEEE 802.11 (Wifi)* na druhé vrstvě, tj.&nbsp;adresovat pomocí mac adres a informace balit do ethernet *framů*. A následně změřit vlastnosti, které takto vybudovaná infrastruktura bude mít.**
 
 ## Příprava prostředí pro měření
 ### Použitý hardware
