@@ -12,6 +12,8 @@ import ins_plugin from "markdown-it-ins";
 import mark_plugin from "markdown-it-mark";
 import math_plugin from "markdown-it-math";
 
+import Tags from "../../components/tags";
+
 export async function getStaticPaths() {
   const files = fs.readdirSync("posts");
   const paths = files.map((fileName) => ({
@@ -39,7 +41,11 @@ export async function getStaticProps({ params: { slug } }) {
 export default function PostPage({ frontmatter, content }) {
   return (
     <article className="prose prose-lg prose-stone max-w-4xl w-[90vw] m-0 mx-auto">
-      <h1 dangerouslySetInnerHTML={{ __html: frontmatter.title }} />
+      <h1
+        dangerouslySetInnerHTML={{ __html: frontmatter.title }}
+        className="mb-0"
+      />
+      <Tags tags={frontmatter.tags} />
       <div
         dangerouslySetInnerHTML={{
           __html: md({
