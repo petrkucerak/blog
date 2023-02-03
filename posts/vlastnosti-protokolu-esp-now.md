@@ -2,6 +2,7 @@
 title: 'Vlastnosti protokolu ESP-NOW'
 metaTitle: 'Vlastnosti protokolu ESP-NOW'
 date: '2023-02-03'
+updated: '2023-02-04'
 tags:
   - embeded
   - IoT

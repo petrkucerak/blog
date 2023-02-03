@@ -45,7 +45,17 @@ export default function PostPage({ frontmatter, content }) {
         dangerouslySetInnerHTML={{ __html: frontmatter.title }}
         className="mb-1"
       />
-      <Tags tags={frontmatter.tags} />
+      <span className="text-stone-400 text-base">
+        {frontmatter.updated !== null && frontmatter.updated !== undefined
+          ? `Naposledy aktualizováno: ${frontmatter.updated}`
+          : null}
+        {frontmatter.updated === null || frontmatter.updated === undefined
+          ? `Publikováno: ${frontmatter.date}`
+          : null}
+      </span>
+      <div className="ml-[-10px] text-base">
+        <Tags tags={frontmatter.tags} />
+      </div>
       <div
         dangerouslySetInnerHTML={{
           __html: md({
