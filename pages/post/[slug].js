@@ -40,14 +40,15 @@ export async function getStaticProps({ params: { slug } }) {
 }
 
 export default function PostPage({ frontmatter, content }) {
+  const plainTitle = frontmatter.title.replace("&nbsp;", " ");
   return (
     <article className="prose prose-lg prose-stone max-w-4xl w-[90vw] m-0 mx-auto">
       <NextSeo
-        title={frontmatter.title}
+        title={plainTitle}
         description={frontmatter.description}
         canonical={`https://blog.petrkucerak.cz/post/${frontmatter.slug}`}
         openGraph={{
-          title: frontmatter.title,
+          title: plainTitle,
           description: frontmatter.description,
           url: `https://blog.petrkucerak.cz/post/${frontmatter.slug}`,
           type: "article",
