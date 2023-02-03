@@ -40,7 +40,11 @@ export default function TagsCloud({ posts }) {
       <div className="flex flex-wrap mx-9 md:max-w-2xl justify-center">
         {tags.map((tag) => {
           return (
-            <span key={tag.name} className="mx-2 text-stone-400 cursor-pointer">
+            <span
+              key={tag.name}
+              className="mx-2 text-stone-400 cursor-not-allowed"
+              title="Momentálně nelze filtrovat příspěvky dle tagu"
+            >
               #{tag.name}
             </span>
           );
