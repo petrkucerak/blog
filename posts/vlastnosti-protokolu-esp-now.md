@@ -16,6 +16,8 @@ icon: 'wifi'
 
 K práci jsem využíval moduly od firmy *Espressif*, konkrétně **ESP32-S2-pico** a **ESP32-S2-LCD-0.96inch** s displejem pro účely debuggování. Jedná se o Wifi vývojové desky s základními periferiemi jako je *ADC* převodník, *I2C* a *SPI* komunikace či *UART*. Deska integruje *low-power Wifi System on Chip (SoC)*. Oproti od *ESP32*, které má 2 jádra procesoru, *ESP32-S2* má pouze jeden *Xtensa singlecore 32-bit procesor*, označován jako *ESP32-S2FH4*, který podporuje frekvenci hodin až do 240 MHz.
 
+![Fotka modulů při měření](/posts/images/vlastnosti-protokolu-esp-now-02.jpg)
+
 ### Vývojové prostředí
 
 MCU z rodiny *ESP32* a *EPS8266* lze programovat v podstatě 2 způsoby, respektive 2 frameworky. Já se rozhodl postavit základ na **Arduino frameworku**, který je pro počáteční konfiguraci méně náročný a používat knihovny z **ESP-IDF frameworku**. Jako vývojové prostředí jsem si vybral **VS Code** s **PlatformIO**. Dle mého se jedná o uživatelsky přívětivé prostředí. Navíc má vysokou podporu komunity a disponuje již spoustou připravených balíčků a konfigurací pro vývojové desky.
@@ -69,6 +71,8 @@ progress baru.*
 *Veškeré kódy jsou dostupné v [repozitáři](https://github.com/petrkucerak/rafting-button/) na mém GitHubu.*
 
 [^uno]: Jako je například `ESP_NOW_HANDLER`.
+
+![Fotka při měření](/posts/images/vlastnosti-protokolu-esp-now-01.jpg)
 
 ## Měření
 
