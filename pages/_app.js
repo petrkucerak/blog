@@ -1,6 +1,7 @@
 import Layout from "../components/layout";
 import "../styles/globals.css";
 import { Athiti } from "@next/font/google";
+import NextNProgress from "nextjs-progressbar";
 
 const athiti = Athiti({
   weight: ["500", "700", "300", "600"],
@@ -18,6 +19,13 @@ function MyApp({ Component, pageProps }) {
         `}
       </style>
       <Layout>
+        <NextNProgress
+          color="#fcd34d"
+          startPosition={0.3}
+          stopDelayMs={100}
+          height={2}
+          showOnShallow={true}
+        />
         <Component {...pageProps} />
       </Layout>
     </>
