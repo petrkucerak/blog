@@ -1,6 +1,6 @@
 ---
 title: 'Jaký je liturgický cyklus?'
-metaTitle: 'Jaký je liturgický cyklus?'
+description: 'Repozitář s webovou aplikací, která určí liturgický cyklus.'
 date: '2022-11-06'
 tags:
   - repo
@@ -11,7 +11,7 @@ icon: 'recycle'
 
 **Jednoduchá PWA aplikace, která řeší můj věčný problém - mám na poslední chvíli najít žalm, nepamatuju si, jaký je liturgický cyklus. Apka běží plně offline, takže stačí stáhnout a jednou spustit, kvůli nacachování.**
 
-| 🌐 url aplikace | [cyklus.petrkucerak.cz](https://cyklus.petrkucerak.cz)                                        |
+| 🌐 url aplikace | [cyklus.petrkucerak.cz](https://cyklus.petrkucerak.cz)                                |
 | -------------- | ------------------------------------------------------------------------------------- |
 | 🔨 repo         | [/petrkucerak/jaky-cyklus](https://github.com/petrkucerak/jaky-cyklus)                |
 | GitPod         | [Gitpod ready-to-code](https://gitpod.io/#https://github.com/petrkucerak/jaky-cyklus) |

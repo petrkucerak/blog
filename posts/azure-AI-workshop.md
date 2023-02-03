@@ -1,6 +1,6 @@
 ---
 title: 'Azure AI workshop'
-metaTitle: 'Azure AI workshop'
+description: 'Meteriály k Azure AI workshopu.'
 date: '2022-12-16'
 tags:
   - repo

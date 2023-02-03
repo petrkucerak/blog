@@ -1,6 +1,6 @@
 ---
 title: 'Prezentační karaoke'
-metaTitle: 'Prezentační karaoke'
+description: 'Společenská hra spočívající v prezenotování z fleku.'
 date: '2022-12-21'
 tags:
   - hry

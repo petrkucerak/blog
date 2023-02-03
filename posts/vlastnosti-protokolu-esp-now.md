@@ -1,6 +1,6 @@
 ---
 title: 'Vlastnosti protokolu ESP-NOW'
-metaTitle: 'Vlastnosti protokolu ESP-NOW'
+description: 'Článek o testování vlastností protokolu ESP-NOW na Wifi modulech.'
 date: '2023-02-03'
 updated: '2023-02-04'
 tags:

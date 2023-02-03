@@ -13,6 +13,7 @@ import mark_plugin from "markdown-it-mark";
 import math_plugin from "markdown-it-math";
 
 import Tags from "../../components/tags";
+import { NextSeo } from "next-seo";
 
 export async function getStaticPaths() {
   const files = fs.readdirSync("posts");
@@ -41,6 +42,20 @@ export async function getStaticProps({ params: { slug } }) {
 export default function PostPage({ frontmatter, content }) {
   return (
     <article className="prose prose-lg prose-stone max-w-4xl w-[90vw] m-0 mx-auto">
+      <NextSeo
+        title={frontmatter.title}
+        description={frontmatter.description}
+        canonical={`https://blog.petrkucerak.cz/post/${frontmatter.slug}`}
+        oepnGraph={{
+          title: frontmatter.title,
+          description: frontmatter.description,
+          url: `https://blog.petrkucerak.cz/post/${frontmatter.slug}`,
+          type: "article",
+          article: {
+            publishedTime: `${frontmatter.date}T16:30:00`,
+          },
+        }}
+      />
       <h1
         dangerouslySetInnerHTML={{ __html: frontmatter.title }}
         className="mb-1"

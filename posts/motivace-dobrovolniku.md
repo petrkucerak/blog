@@ -1,6 +1,6 @@
 ---
 title: 'Motivace dobrovolníků'
-metaTitle: 'Motivace dobrovolníků'
+description: 'Paper z předmětu diskutující motivaci dobrovolníků.'
 date: '2023-02-02'
 updated:
 tags:

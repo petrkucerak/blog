@@ -1,6 +1,6 @@
 ---
 title: 'Jak tvořit prezentace v&nbsp;markdawnu'
-metaTitle: 'Jak tvořit prezentace v markdawnu'
+description: 'Článek a zkušenost s tím jak tvořit prezentace v markdawnu as code.'
 date: '2023-01-02'
 tags:
   - slideshow
