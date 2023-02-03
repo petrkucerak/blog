@@ -52,9 +52,11 @@ export default function Home({ posts }) {
                 title={frontmatter.title}
               >
                 <Icon icon={frontmatter.icon} />
-                <h3 className="px-2 pt-2 uppercase font-bold">
-                  {frontmatter.title}
-                </h3>
+                <h3
+                  className="px-2 pt-2 uppercase font-bold"
+                  dangerouslySetInnerHTML={{ __html: frontmatter.title }}
+                />
+
                 <span className="px-2">{frontmatter.date}</span>
                 <Tags tags={frontmatter.tags} />
               </Link>
