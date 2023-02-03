@@ -36,7 +36,7 @@ export default function Home({ posts }) {
     <>
       <Introduction />
       <section>
-        <h2 className="text-xl font-bold text-center mt-8 uppercase">
+        <h2 className="text-xl font-bold text-center mt-8 uppercase text-stone-800">
           Nejnovější pousty
         </h2>
         <TagsCloud posts={posts} />
