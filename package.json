@@ -19,6 +19,7 @@
     "markdown-it-footnote": "^3.0.3",
     "markdown-it-ins": "^3.0.1",
     "markdown-it-mark": "^3.0.1",
+    "markdown-it-math": "^4.1.1",
     "markdown-it-sub": "^1.0.0",
     "markdown-it-sup": "^1.0.0",
     "next": "13.1.6",

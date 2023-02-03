@@ -10,6 +10,9 @@ import container_plugin from "markdown-it-container";
 import deflist_plugin from "markdown-it-deflist";
 import ins_plugin from "markdown-it-ins";
 import mark_plugin from "markdown-it-mark";
+import math_plugin from "markdown-it-math";
+
+import Tags from "../../components/tags";
 
 export async function getStaticPaths() {
   const files = fs.readdirSync("posts");
@@ -37,8 +40,22 @@ export async function getStaticProps({ params: { slug } }) {
 
 export default function PostPage({ frontmatter, content }) {
   return (
-    <article className="prose lg:prose-base md:prose-lg prose-xl prose-stone max-w-4xl w-[90vw] m-0 mx-auto">
-      <h1 dangerouslySetInnerHTML={{ __html: frontmatter.title }} />
+    <article className="prose prose-lg prose-stone max-w-4xl w-[90vw] m-0 mx-auto">
+      <h1
+        dangerouslySetInnerHTML={{ __html: frontmatter.title }}
+        className="mb-1"
+      />
+      <span className="text-stone-400 text-base">
+        {frontmatter.updated !== null && frontmatter.updated !== undefined
+          ? `Naposledy upraveno: ${frontmatter.updated}`
+          : null}
+        {frontmatter.updated === null || frontmatter.updated === undefined
+          ? `Zveřejněno: ${frontmatter.date}`
+          : null}
+      </span>
+      <div className="ml-[-10px] text-base">
+        <Tags tags={frontmatter.tags} />
+      </div>
       <div
         dangerouslySetInnerHTML={{
           __html: md({
@@ -80,6 +97,7 @@ export default function PostPage({ frontmatter, content }) {
             .use(deflist_plugin)
             .use(ins_plugin)
             .use(mark_plugin)
+            .use(math_plugin)
             .render(content),
         }}
       />
