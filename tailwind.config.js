@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        athiti: ["Athiti", "sans-serif"],
+        athiti: ["var(--athiti-font)", "sans-serif"],
       },
     },
   },

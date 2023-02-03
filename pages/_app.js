@@ -3,15 +3,24 @@ import "../styles/globals.css";
 import { Athiti } from "@next/font/google";
 
 const athiti = Athiti({
-  weight: "500",
-  subsets: ["latin"],
+  weight: ["500", "700"],
+  subsets: ["latin-ext", "latin"],
 });
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <>
+      <style jsx global>
+        {`
+          :root {
+            --athiti-font: ${athiti.style.fontFamily};
+          }
+        `}
+      </style>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </>
   );
 }
 
