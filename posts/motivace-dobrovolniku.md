@@ -18,7 +18,9 @@ Tento papre vznikl jako práce v rámci předmětu [BD5B16MPS](https://intranet.
 
 Toto téma jsem si zvolil, protože sám jsem dobrovolníkem. Věnuji se přípravě volnočasových a edukativních akcí pro děti a mladé. Věřím, že díky psaní tohoto paperu se dozvím něco nového a zodpovězení předchozích otázek mi pomůže se v dané problematice lépe orientovat.
 
-🎥 Kromě paperu jsem na toto téma připravoval i [slideshow](https://blog.petrkucerak.cz/posts/docs/motivace-dobrovolniku.pdf).
+Kromě paperu jsem na toto téma připravoval i [slideshow](https://blog.petrkucerak.cz/posts/docs/motivace-dobrovolniku.pdf).
+
+![screenshot pripravy prezentace](/posts/images/motivace-dobrovolniku-01.png)
 
 ## 2. Dobrovolník a dobrovolnictví 
 
