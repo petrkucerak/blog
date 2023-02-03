@@ -14,32 +14,6 @@ export default function Meta() {
       <meta name="theme-color" content={themeColor} />
       {/* End of config favicon */}
 
-      {/* Start of config fonts */}
-      {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossOrigin="true"
-      />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Athiti:wght@500;700&display=swap"
-        rel="preload"
-        as="style"
-      />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Athiti:wght@500;700&display=swap"
-        rel="stylesheet"
-        media="print"
-        onLoad="this.media='all'"
-      />
-      <noscript>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Athiti:wght@500;700&display=swap"
-          rel="stylesheet"
-        />
-      </noscript> */}
-      {/* End of config fonts */}
-
       {/* Start of meta tags */}
       <title>Kůčův blog</title>
       <meta name="description" content={descritpion} />
