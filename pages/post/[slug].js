@@ -47,7 +47,7 @@ export default function PostPage({ frontmatter, content }) {
       />
       <span className="text-stone-400 text-base">
         {frontmatter.updated !== null && frontmatter.updated !== undefined
-          ? `Naposledy aktualizováno: ${frontmatter.updated}`
+          ? `Naposledy upraveno: ${frontmatter.updated}`
           : null}
         {frontmatter.updated === null || frontmatter.updated === undefined
           ? `Publikováno: ${frontmatter.date}`
