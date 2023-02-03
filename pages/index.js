@@ -37,13 +37,17 @@ export default function Home({ posts }) {
           key={slug}
           className="m-2 overflow-hidden flex flex-col py-1 text-stone-500 hover:text-stone-900 transition-all hover:scale-105 duration-300	"
         >
-          <Link href={`/post/${slug}`}>
-            <a className="p-5" title={frontmatter.title}>
-              <Icon icon={frontmatter.icon} />
-              <h1 className="px-2 pt-2 uppercase font-bold">{frontmatter.title}</h1>
-              <span className="px-2">{frontmatter.date}</span>
-              <Tags tags={frontmatter.tags} />
-            </a>
+          <Link
+            href={`/post/${slug}`}
+            className="p-5"
+            title={frontmatter.title}
+          >
+            <Icon icon={frontmatter.icon} />
+            <h1 className="px-2 pt-2 uppercase font-bold">
+              {frontmatter.title}
+            </h1>
+            <span className="px-2">{frontmatter.date}</span>
+            <Tags tags={frontmatter.tags} />
           </Link>
         </div>
       ))}
