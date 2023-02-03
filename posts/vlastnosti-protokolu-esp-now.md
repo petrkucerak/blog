@@ -87,14 +87,101 @@ Při měření byly sledovány následující parametry:
 
 ### Scénář A
 
+![Vizualizace scénáře typu A](/posts/images/vlastnosti-protokolu-esp-now/ScenarioA.png)
+
 V scénářích typu A se snažím otestovat to, jak změna parametru typu odesílání, tj.
 přepínání mezi *brodacastem* a *unicastem*, ovlivní *round-time trip* **v závislosti na velikosti
 zprávy**. Měření se odehrává v prostředí bytu v činžovním domě, kde dochází k rušení
 několika okolními Wifi sítěmi.
 
+#### Broadcast
 
-Výsledky měření těchto scénářů si je možné prohlédnout v grafech B.1 a B.2. Odesílání
-se chová dle očekávání. Zprávy větší velikosti trvají déle než zprávy menší. Zajímavé
-je srovnání broadcastu a unicastu. Broadcast je nepatrně pomalejší.
+| **SCÉNÁŘ**     | **A11**             | **A12**             | **A13**             | **A14**             | **A15**             |
+| -------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- |
+| **prostředí**  | byt (s WiFi sítěmi) | byt (s WiFi sítěmi) | byt (s WiFi sítěmi) | byt (s WiFi sítěmi) | byt (s WiFi sítěmi) |
+| **překážka**   | volný vzduch        | volný vzduch        | volný vzduch        | volný vzduch        | volný vzduch        |
+| **vzdálenost** | 50 cm               | 50 cm               | 50 cm               | 50 cm               | 50 cm               |
+| **velikost**   | **==1 bajt==**      | **==10 bajt==**     | **==50 bajt==**     | **==120 bajt==**    | **==250 bajt==**    |
+| **počet**      | **10 000 zpráv**    | **10 000 zpráv**    | **10 000 zpráv**    | **1 000 zpráv**     | **5 000 zpráv**     |
+| **typ**        | **broadcast**       | **broadcast**       | **broadcast**       | **broadcast**       | **broadcast**       |
 
-Také je zajímavé si povšimnout nakumulovaných odpovědí v jeden čas. Tuto skutenčost si vysvětluji implementací broadcastu v prokolou ESP-NOW.
+#### Unicast
+
+| **SCÉNÁŘ**     | **A21**             | **A22**             | **A23**             | **A24**             | **A25**             |
+| -------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- |
+| **prostředí**  | byt (s WiFi sítěmi) | byt (s WiFi sítěmi) | byt (s WiFi sítěmi) | byt (s WiFi sítěmi) | byt (s WiFi sítěmi) |
+| **překážka**   | volný vzduch        | volný vzduch        | volný vzduch        | volný vzduch        | volný vzduch        |
+| **vzdálenost** | 50 cm               | 50 cm               | 50 cm               | 50 cm               | 50 cm               |
+| **velikost**   | **==1 bajt==**      | **==10 bajt==**     | **==50 bajt==**     | **==120 bajt==**    | **==250 bajt==**    |
+| **počet**      | 10 000 zpráv        | 10 000 zpráv        | 10 000 zpráv        | 10 000 zpráv        | 10 000 zpráv        |
+| **typ**        | **unicast**         | **unicast**         | **unicast**         | **unicast**         | **unicast**         |
+
+![graf A2x](/posts/images/vlastnosti-protokolu-esp-now/ScenarioA2-graph.png)
+
+Výsledky měření těchto scénářů si je možné prohlédnout v následujících. Odesílání
+se **chová dle očekávání**. Zprávy **větší velikosti trvají déle** než zprávy menší. Zajímavé
+je srovnání *broadcastu* a *unicastu*. *Broadcast* je nepatrně pomalejší.
+
+![graf A1x](/posts/images/vlastnosti-protokolu-esp-now/ScenarioA1-graph.png)
+
+Také je zajímavé si povšimnout **nakumulovaných odpovědí** v jeden čas. Tuto skutenčost si vysvětluji implementací **broadcastu** v prokolou ESP-NOW.
+
+
+### Scénář C
+
+![Vizualizace scénáře typu C](/posts/images/vlastnosti-protokolu-esp-now/ScenarioC.png)
+
+Sadou scénářů Cx se snažím pozorovat vlastnosti v&nbsp;signálově **čistém prostředí**&nbsp; v&nbsp;
+závislosti na&nbsp;vzdálenosti a&nbsp;typu vysílání. Nejedná se o laboratorně čisté prostředí. Měření bylo prováděno v prostředí lesa, který je od nejbližší
+obce vzdálen asi 5 km a v okolí mého bydliště nejvíce čisté od 2,4 GHz rušení.
+
+| SCÉNÁŘ                   | C1                | C2                | C3                | C4                | C5                | C6                |
+| ------------------------ | ----------------- | ----------------- | ----------------- | ----------------- | ----------------- | ----------------- |
+| **prostředí**            | les (bez 2.4 GHz) | les (bez 2.4 GHz) | les (bez 2.4 GHz) | les (bez 2.4 GHz) | les (bez 2.4 GHz) | les (bez 2.4 GHz) |
+| **překážka**             | vzduch            | vzduch            | vzduch            | vzduch            | vzduch            | vzduch            |
+| **vzdálenost**           | **==0,5 m==**     | **==25 m==**      | **==50 m==**      | **==100 m==**     | **==100 m==**     | **==50 m==**      |
+| **velikost**             | 125 bajtů         | 125 bajtů         | 125 bajtů         | 125 bajtů         | 125 bajtů         | 125 bajtů         |
+| **počet**                | 5 000 zpráv       | 5 000 zpráv       | 5 000 zpráv       | 5 000 zpráv       | 5 000 zpráv       | 5 000 zpráv       |
+| **počet chybných zpráv** | ==0 zpráv==       | ==3 zpráv==       | ==15 zpráv==      | ==35 zpráv==      | ==15 zpráv==      | ==6 zpráv==       |
+| **typ**                  | **==unicast==**   | **==unicast==**   | **==unicast==**   | **==unicast==**   | **==brodcast==**  | **==brodcast==**  |
+
+![graf Cx](/posts/images/vlastnosti-protokolu-esp-now/ScenarioC-graph.png)
+
+Výsledky měření těchto scénáře si je možné prohlédnout v grafu. Zde se opět prokol **chová dle očekávání**. Nedochází k takovému zpoždění, jako například při měření scénářů typu A. Také si je možné povšimnou toho, že se jednou za čas nějaká **zpráva opozdí**.
+
+Při tomto měření jsem zaznamenával také chybovost počet **chybných zpráv**.&nbsp;[^quadro] Jejich četnost si ji možné prohlédnout v tabulce s C scénáři.
+
+[^quadro]: Chybnou zprávou se myslí taková zpráva, která nedorazí do specifikovaného deadlinu, tedy mimo graf.
+
+Během tohoto měření jsem zjistil, že je důležité, aby na větší vzdálenosti *(25 m a více)*, nestála signálu v cestě žádná překážka.
+
+**Zajímavé je také srovnání scénáře A a C. Můžeme pozorovat, že ==vliv vzdálenosti ovlivňuje především ztrátovost paketů. Naopak velikost ovlivňuje rychlost přenosu==**.
+
+
+### Scénář D
+
+![Vizualizace scénáře typu D](/posts/images/vlastnosti-protokolu-esp-now/ScenarioD.png)
+
+Scénář D byl oproti ostatním měřením odlišný v tom, že jsem se nejprve **snažili stanovit hranici**, kdy je zařízení ještě schopno přijímat zprávy a kdy už ne. Experimentálně jsem dospěl k hranici 580 m. Následně jsem odeslal 1000 zpráv s cílem zjistit, jak je veliká ztrátovost. Měření bylo realizováno na poli, přes které může procházet signál na 2,4 GHz.
+
+| SCÉNÁŘ                   | D1               |
+| ------------------------ | ---------------- |
+| **prostředí**            | pole (s 2.4 GHz) |
+| **překážka**             | vzduch           |
+| **vzdálenost**           | **577 m**        |
+| **velikost**             | 125 bajtů        |
+| **počet**                | 1 000 zpráv      |
+| **počet chybných zpráv** | 50 zpráv         |
+| **typ**                  | **unicast**      |
+
+![graf D1](/posts/images/vlastnosti-protokolu-esp-now/ScenarioD-graph.png)
+
+Při měření jsme zjistil, že při odesílání na velikou vzdálenost je třeba dbát na orientaci čipu. Pokud nebylo zařízení správně natočeno, nešlo odeslat žádné zprávy.
+
+Výsledek měření je vizualizován grafem D1. Při tomto scénáři bylo ovšem mnohem zajímavjěíš pozorovat četnost úplné ztráty dat.
+
+Při odeslání 1000 zpráv, se ztratilo 50. Můžeme tedy jednoduchým výpočtem zjistit jaká je procentuální ztrátovost na dlouhé vzdálenosti.
+
+loss = error / sent
+
+V našem případě se při odeslání 1000 zpráv objevilo 50 chyb. Chybovost je tedy 5~\%.\fnote{$50/1000 = 0,05$}.
