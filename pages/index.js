@@ -2,6 +2,7 @@ import fs from "fs";
 import matter from "gray-matter";
 import Link from "next/link";
 import Icon from "../components/icon";
+import Introduction from "../components/introduction";
 import Tags from "../components/tags";
 
 export async function getStaticProps() {
@@ -31,26 +32,32 @@ export async function getStaticProps() {
 
 export default function Home({ posts }) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 p-4 md:p-0 max-w-4xl w-[90vw] m-0 mx-auto">
-      {posts.map(({ slug, frontmatter }) => (
-        <article
-          key={slug}
-          className="m-2 overflow-hidden flex flex-col py-1 text-stone-500 hover:text-stone-900 transition-all hover:scale-105 duration-300	"
-        >
-          <Link
-            href={`/post/${slug}`}
-            className="p-5"
-            title={frontmatter.title}
+    <>
+      <Introduction />
+      <h2 className="text-xl font-bold text-center mt-8 uppercase">
+        Nejnovější pousty
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 p-4 pt-0 md:p-0 max-w-4xl w-[90vw] m-0 mx-auto">
+        {posts.map(({ slug, frontmatter }) => (
+          <article
+            key={slug}
+            className="m-2 overflow-hidden flex flex-col py-1 text-stone-500 hover:text-stone-900 transition-all hover:scale-105 duration-300	"
           >
-            <Icon icon={frontmatter.icon} />
-            <h1 className="px-2 pt-2 uppercase font-bold">
-              {frontmatter.title}
-            </h1>
-            <span className="px-2">{frontmatter.date}</span>
-            <Tags tags={frontmatter.tags} />
-          </Link>
-        </article>
-      ))}
-    </div>
+            <Link
+              href={`/post/${slug}`}
+              className="p-5"
+              title={frontmatter.title}
+            >
+              <Icon icon={frontmatter.icon} />
+              <h3 className="px-2 pt-2 uppercase font-bold">
+                {frontmatter.title}
+              </h3>
+              <span className="px-2">{frontmatter.date}</span>
+              <Tags tags={frontmatter.tags} />
+            </Link>
+          </article>
+        ))}
+      </div>
+    </>
   );
 }
