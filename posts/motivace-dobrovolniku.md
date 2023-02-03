@@ -75,121 +75,49 @@ Tošner ve své publikaci&nbsp;[^sedm] vyvrací několik základních předsudk�
 2. Dobrovolníci nejsou motivování finančním ziskem, nýbrž vytvářením něčeho, v čem vidí smysl.&nbsp;[^devet]
 
 [^osm]:  FRIČ, P. a kol. 2001 Dárcovství a dobrovolnictví v České republice: (výsledky výzkumu NROS a Agnes). Vyd. 1. Praha: NROS, 2001. ISBN 80-902633-7-2
-[^devet]: viz. Definice v části 2.1. Vymezení pojmů
+[^devet]: viz. Definice v části ++2.1. Vymezení pojmů++
 
-Dobrovolníci nejsou levná pracovní síla. K efektivnímu a dlouhodobě udržitelnému fungování dobrovolníků je třeba vytvářet vhodné zázemí. To často může být časově i finančně více náročné než klasický zaměstnanec. Na druhou stranu dobrovolníci přináší přidanou hodnotu v jiných oblastech. 
+**Dobrovolníci nejsou levná pracovní síla**. K efektivnímu a dlouhodobě udržitelnému fungování dobrovolníků je třeba vytvářet vhodné zázemí. To často může být časově i finančně více náročné než klasický zaměstnanec. Na druhou stranu dobrovolníci přináší přidanou hodnotu v jiných oblastech. 
 
 Dle mého názoru nelze říci, že by tyto teze platili ve všech případech. Nicméně je můžeme prohlásit za cíle, ke kterým se mohou dobrovolnické organizace a koordinátoři dobrovolníků při práci se svými svěřenci limitně blížit. 
 
-1. Dobrovolnictví v číslech 
+## 3. Dobrovolnictví v číslech
 
-3.1 Druhy dobrovolnictví 
+### 3.1 Druhy dobrovolnictví 
 
-Ve vyspělých demokratických zemích existuje dobrovolnictví téměř ve všech oblastech společenského života. Od zdravotnictví, přes vzdělávání až po svět moderních technologií. Naznačují tomu i data ČSU,10 která analyzuje působení neziskových organizací v ČR. 
+Ve vyspělých demokratických zemích existuje dobrovolnictví téměř ve všech oblastech společenského života. Od zdravotnictví, přes vzdělávání až po svět moderních technologií. Naznačují tomu i data ČSU,&nbsp;[^deset] která analyzuje působení neziskových organizací v ČR.
 
-Tento výzkum je třeba brát do jisté míry s rezervou, jelikož v datech jsou započítání pouze tzv. formální dobrovolníci.11 
+[^deset]: Zdroj: FOŘTOVÁ, Jitka. NEZISKOVÉ ORGANIZACE: Tisková konference [online]. ČESKÝ STATISTICKÝ ÚŘAD, 27. října 2020 [cit. 2022-10-18]. Dostupné z: https://www.czso.cz/csu/czso/hodnota-dobrovolnicke-prace-vzrostla-k1eri03uyg
 
-3.2 Historický vývoj 
+Tento výzkum je třeba brát do jisté míry s rezervou, jelikož v datech jsou započítání pouze tzv. formální dobrovolníci.&nbsp;[^jedenact]
+
+[^jedenact]:  Pojmeme **formální dobrovolník** v tomto článku označuji takového dobrovolníka, který je součástí dobrovolnické nebo jiné organizace a má s danou organizací uzavřeno tzv. dobrovolnickou smlouvu. Typicky se jedná o dobrovolníky zapojené do dobrovolnických organizací.
+Opakem je **neformální dobrovolník**. Tím označuji člověka, který neuzavřel dobrovolnickou smlouvu, ale přesto vykonává dobrovolnickou činnost. Typicky se jedná například o sousedskou výpomoc.
+
+
+### 3.2 Historický vývoj
 
 České dobrovolnictví je do značné míry poznamenáno předchozím režimem a obrazem dobrovolnictví v společnosti. Dnes se ale stává stále více moderním, a to i díky působení sociálních sítí ve spolčenosti. 
 
 Obecně můžeme tvrdit, že se počty dobrovolníků zvyšují, a to ve všech oblastech. Zajímavé pro nás může být srovnání procentuálního rozdělení dobrovolníků do sektorů mezi pro roky 2008 a 1991. 
 
-OBLAST 
-
-1991 [%] 
-
-2008 [%] 
-
-org. zabývající se službami pro přestárlé, postižené, jinak znevýhodněné 
-
-2 
-
-4 
-
-náboženská nebo církevní org. 
-
-2 
-
-3 
-
-org. zabývající se vzděláním, uměleckými, hudebními nebo kulturními aktivitami 
-
-2 
-
-5 
-
-odbory 
-
-6 
-
-3 
-
-politická strana či hnutí 
-
-2 
-
-2 
-
-org. zabývající se činností v místě bydliště, chudobou, zaměstnaností, bydlením nebo rasovou nesnášenlivostí 
-
-1 
-
-2 
-
-org. zabývající se rozvojem třetího světa nebo lidskými právy 
-
-0 
-
-1 
-
-org. zabývající se ochranou životního prostředí, ekologického hnutí nebo pro organizace zaměřenou na práva zvířat 
-
-3 
-
-4 
-
-sdružení podle povolání či profesní asociace 
-
-2 
-
-2 
-
-org. zabývající se prací s mládeží (např. vedení skautů) 
-
-3 
-
-4 
-
-org. zaměřenou na sport nebo zábavu 
-
-7 
-
-11 
-
-org. žen nebo pro ženské hnutí 
-
-1 
-
-2 
-
-mírové hnutí 
-
-0 
-
-1 
-
-dobrovolná organizace v oblasti zdraví 
-
-3 
-
-2 
-
-jiná organizace 
-
-4 
-
-4 
+| OBLAST                                                                                                            | 1991 [%] | 2008 [%] |
+| ----------------------------------------------------------------------------------------------------------------- | -------- | -------- |
+| org. zabývající se službami pro přestárlé, postižené, jinak znevýhodněné                                          | 2        | 4        |
+| náboženská nebo církevní org.                                                                                     | 2        | 3        |
+| org. zabývající se vzděláním, uměleckými, hudebními nebo kulturními aktivitami                                    | 2        | 5        |
+| odbory                                                                                                            | 6        | 3        |
+| politická strana či hnutí                                                                                         | 2        | 2        |
+| org. zabývající se činností v místě bydliště, chudobou, zaměstnaností, bydlením nebo rasovou nesnášenlivostí      | 1        | 2        |
+| org. zabývající se rozvojem třetího světa nebo lidskými právy                                                     | 0        | 1        |
+| org. zabývající se ochranou životního prostředí, ekologického hnutí nebo pro organizace zaměřenou na práva zvířat | 3        | 4        |
+| sdružení podle povolání či profesní asociace                                                                      | 2        | 2        |
+| org. zabývající se prací s mládeží (např. vedení skautů)                                                          | 3        | 4        |
+| org. zaměřenou na sport nebo zábavu                                                                               | 7        | 11       |
+| org. žen nebo pro ženské hnutí                                                                                    | 1        | 2        |
+| mírové hnutí                                                                                                      | 0        | 1        |
+| dobrovolná organizace v oblasti zdraví                                                                            | 3        | 2        |
+| jiná organizace                                                                                                   | 4        | 4        |
 
 Zdroj dat12 
 
