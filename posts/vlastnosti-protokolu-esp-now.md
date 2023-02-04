@@ -104,6 +104,8 @@ několika okolními Wifi sítěmi.
 
 #### Broadcast
 
+<div style="max-width:980px; overflow-x: scroll; white-space: nowrap; ">
+
 | **SCÉNÁŘ**     | **A11**             | **A12**             | **A13**             | **A14**             | **A15**             |
 | -------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- |
 | **prostředí**  | byt (s WiFi sítěmi) | byt (s WiFi sítěmi) | byt (s WiFi sítěmi) | byt (s WiFi sítěmi) | byt (s WiFi sítěmi) |
@@ -112,8 +114,11 @@ několika okolními Wifi sítěmi.
 | **velikost**   | **==1 bajt==**      | **==10 bajt==**     | **==50 bajt==**     | **==120 bajt==**    | **==250 bajt==**    |
 | **počet**      | **10 000 zpráv**    | **10 000 zpráv**    | **10 000 zpráv**    | **1 000 zpráv**     | **5 000 zpráv**     |
 | **typ**        | **broadcast**       | **broadcast**       | **broadcast**       | **broadcast**       | **broadcast**       |
+</div>
 
 #### Unicast
+
+<div style="max-width:980px; overflow-x: scroll; white-space: nowrap; ">
 
 | **SCÉNÁŘ**     | **A21**             | **A22**             | **A23**             | **A24**             | **A25**             |
 | -------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- |
@@ -123,6 +128,7 @@ několika okolními Wifi sítěmi.
 | **velikost**   | **==1 bajt==**      | **==10 bajt==**     | **==50 bajt==**     | **==120 bajt==**    | **==250 bajt==**    |
 | **počet**      | 10 000 zpráv        | 10 000 zpráv        | 10 000 zpráv        | 10 000 zpráv        | 10 000 zpráv        |
 | **typ**        | **unicast**         | **unicast**         | **unicast**         | **unicast**         | **unicast**         |
+</div>
 
 ![graf A2x](/posts/images/vlastnosti-protokolu-esp-now/ScenarioA2-graph.png)
 
@@ -143,6 +149,8 @@ Sadou scénářů Cx se snažím pozorovat vlastnosti v&nbsp;signálově **čist
 závislosti na&nbsp;vzdálenosti a&nbsp;typu vysílání. Nejedná se o laboratorně čisté prostředí. Měření bylo prováděno v prostředí lesa, který je od nejbližší
 obce vzdálen asi 5 km a v okolí mého bydliště nejvíce čisté od 2,4 GHz rušení.
 
+<div style="max-width:980px; overflow-x: scroll; white-space: nowrap; ">
+
 | SCÉNÁŘ                   | C1                | C2                | C3                | C4                | C5                | C6                |
 | ------------------------ | ----------------- | ----------------- | ----------------- | ----------------- | ----------------- | ----------------- |
 | **prostředí**            | les (bez 2.4 GHz) | les (bez 2.4 GHz) | les (bez 2.4 GHz) | les (bez 2.4 GHz) | les (bez 2.4 GHz) | les (bez 2.4 GHz) |
@@ -152,6 +160,8 @@ obce vzdálen asi 5 km a v okolí mého bydliště nejvíce čisté od 2,4 GHz r
 | **počet**                | 5 000 zpráv       | 5 000 zpráv       | 5 000 zpráv       | 5 000 zpráv       | 5 000 zpráv       | 5 000 zpráv       |
 | **počet chybných zpráv** | ==0 zpráv==       | ==3 zpráv==       | ==15 zpráv==      | ==35 zpráv==      | ==15 zpráv==      | ==6 zpráv==       |
 | **typ**                  | **==unicast==**   | **==unicast==**   | **==unicast==**   | **==unicast==**   | **==brodcast==**  | **==brodcast==**  |
+
+</div>
 
 ![graf Cx](/posts/images/vlastnosti-protokolu-esp-now/ScenarioC-graph.png)
 
@@ -172,6 +182,8 @@ Během tohoto měření jsem zjistil, že je důležité, aby na větší vzdál
 
 Scénář D byl oproti ostatním měřením odlišný v tom, že jsem se nejprve **snažili stanovit hranici**, kdy je zařízení ještě schopno přijímat zprávy a kdy už ne. Experimentálně jsem dospěl k hranici 580 m. Následně jsem odeslal 1000 zpráv s cílem zjistit, jak je veliká ztrátovost. Měření bylo realizováno na poli, přes které může procházet signál na 2,4 GHz.
 
+<div style="max-width:980px; overflow-x: scroll; white-space: nowrap; ">
+
 | SCÉNÁŘ                   | D1               |
 | ------------------------ | ---------------- |
 | **prostředí**            | pole (s 2.4 GHz) |
@@ -181,6 +193,8 @@ Scénář D byl oproti ostatním měřením odlišný v tom, že jsem se nejprve
 | **počet**                | 1 000 zpráv      |
 | **počet chybných zpráv** | 50 zpráv         |
 | **typ**                  | **unicast**      |
+
+</div>
 
 ![graf D1](/posts/images/vlastnosti-protokolu-esp-now/ScenarioD-graph.png)
 
