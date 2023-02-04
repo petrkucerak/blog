@@ -1,11 +1,11 @@
 import Head from "next/head";
 
 export default function Meta() {
-  const descritpion = `Kůčův blog s jeho poznatky, projekty a nápady.`;
+  const descritpion = `Můj blog s projektíky, hrami, bastlárnami a zkrátka se vším, co mě napadne!`;
   const author = `Petr Kučera`;
   const mail = `petr@khome.cz`;
   const blogName = `Kůčův blog`;
-  const themeColor = `#ffffff`;
+  const themeColor = `#1c1917`;
   const url = `https://blog.petrkucerak.cz/`;
   return (
     <Head>
@@ -13,32 +13,6 @@ export default function Meta() {
       <meta name="msapplication-TileColor" content="#da532c" />
       <meta name="theme-color" content={themeColor} />
       {/* End of config favicon */}
-
-      {/* Start of config fonts */}
-      {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossOrigin="true"
-      />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Athiti:wght@500;700&display=swap"
-        rel="preload"
-        as="style"
-      />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Athiti:wght@500;700&display=swap"
-        rel="stylesheet"
-        media="print"
-        onLoad="this.media='all'"
-      />
-      <noscript>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Athiti:wght@500;700&display=swap"
-          rel="stylesheet"
-        />
-      </noscript> */}
-      {/* End of config fonts */}
 
       {/* Start of meta tags */}
       <title>Kůčův blog</title>
@@ -88,7 +62,7 @@ export default function Meta() {
         sizes="16x16"
         href="/icons/favicon-16x16.png"
       />
-      <link rel="manifest" href="/manifest.json" />
+      <link rel="manifest" href="/manifest.webmanifest" />
       <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#4b6b3c" />
       <link rel="shortcut icon" href="/icons/favicon.ico" />
 

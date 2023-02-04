@@ -1,6 +1,6 @@
 ---
 title: 'Odkrývačka'
-metaTitle: 'Společenská hra spočívající v odkrývání obrázků'
+description: 'Společenská hra spočívající v odkrývání obrázků.'
 date: '2022-05-31'
 tags:
    - hry

@@ -1,6 +1,6 @@
 ---
 title: 'Jak z blogu vytvořit podcast pomocí AI'
-metaTitle: 'Jak z blogu vytvořit podcast pomocí AI'
+description: 'Jak z blogu vytvořit podcast pomocí selužeb AI.'
 date: '2022-03-22'
 tags:
   - nextjs

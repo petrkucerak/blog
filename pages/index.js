@@ -1,5 +1,6 @@
 import fs from "fs";
 import matter from "gray-matter";
+import { NextSeo } from "next-seo";
 import Link from "next/link";
 import Icon from "../components/icon";
 import Introduction from "../components/introduction";
@@ -34,6 +35,24 @@ export async function getStaticProps() {
 export default function Home({ posts }) {
   return (
     <>
+      <NextSeo
+        title="Kůčův blog"
+        description="Můj blog s projektíky, hrami, bastlárnami a zkrátka se vším, co mě napadne!"
+        canonical={`https://blog.petrkucerak.cz/`}
+        openGraph={{
+          type: "website",
+          locale: "cs_CZ",
+          siteName: "Kůčův blog",
+          description:
+            "Můj blog s projektíky, hrami, bastlárnami a zkrátka se vším, co mě napadne!",
+          url: `https://blog.petrkucerak.cz/`,
+        }}
+        twitter={{
+          site: "@petrkucerak",
+          handle: "@petrkucerak",
+          cardType: "summary_large_image",
+        }}
+      />
       <Introduction />
       <section>
         <h2 className="text-xl font-bold text-center mt-8 uppercase text-stone-800">

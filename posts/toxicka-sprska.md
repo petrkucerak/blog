@@ -1,6 +1,6 @@
 ---
 title: 'Toxická sprška'
-metaTitle: 'Jednoduchá aplikace pro hru mezi bouřky do centra Prahy.'
+description: 'Jednoduchá aplikace pro hru mezi bouřky do centra Prahy.'
 date: '2022-10-06'
 tags:
   - hry
