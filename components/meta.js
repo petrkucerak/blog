@@ -5,7 +5,7 @@ export default function Meta() {
   const author = `Petr Kučera`;
   const mail = `petr@khome.cz`;
   const blogName = `Kůčův blog`;
-  const themeColor = `#ffffff`;
+  const themeColor = `#1c1917`;
   const url = `https://blog.petrkucerak.cz/`;
   return (
     <Head>
