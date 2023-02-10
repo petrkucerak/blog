@@ -2,6 +2,7 @@
 title: 'Audiostorky'
 description: 'Jak z blogu vytvořit podcast pomocí AI.'
 date: '2022-08-20'
+updated: '2023-02-10'
 tags:
   - soundtrap
   - audiobooks
@@ -42,3 +43,7 @@ Nahrávky nemám momentálně nikde kompletované. Nicméně přikládám pár o
 <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/861791023&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/petrkucerak" title="Petr Kučera" target="_blank" style="color: #cccccc; text-decoration: none;">Petr Kučera</a> · <a href="https://soundcloud.com/petrkucerak/r-t-a-jej-p-se" title="Rút a její píseň" target="_blank" style="color: #cccccc; text-decoration: none;">Rút a její píseň</a></div>
 
 <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/823657843&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/petrkucerak" title="Petr Kučera" target="_blank" style="color: #cccccc; text-decoration: none;">Petr Kučera</a> · <a href="https://soundcloud.com/petrkucerak/settlers_spo" title="spolco.settlers" target="_blank" style="color: #cccccc; text-decoration: none;">spolco.settlers</a></div>
+
+Několik nahrávek jsem také nově přidal do playlistu na Youtube.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLrLp6au5jDvkv3oJ2qVQltsZtFaZ2hLlY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
