@@ -46,4 +46,4 @@ Nahrávky nemám momentálně nikde kompletované. Nicméně přikládám pár o
 
 Několik nahrávek jsem také nově přidal do playlistu na Youtube.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLrLp6au5jDvkv3oJ2qVQltsZtFaZ2hLlY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLrLp6au5jDvkv3oJ2qVQltsZtFaZ2hLlY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
