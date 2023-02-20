@@ -1,5 +1,5 @@
 ---
-title: 'Riskuj'
+title: 'Hra Riskuj'
 description: 'Aplikace pro společenskou hru Riskuj.'
 date: '2023-02-20'
 tags:
