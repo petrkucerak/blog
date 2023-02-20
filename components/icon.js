@@ -5,6 +5,7 @@
 
 import {
   IconAnchor,
+  IconAxe,
   IconBiohazard,
   IconEye,
   IconHandOff,
@@ -31,5 +32,6 @@ export default function Icon({ icon }) {
   if (icon === "moodboy") return <IconMoodBoy className="ml-2" />;
   if (icon === "wifi") return <IconWifi className="ml-2" />;
   if (icon === "handOff") return <IconHandOff className="ml-2" />;
+  if (icon === "axe") return <IconAxe className="ml-2" />;
   else return <IconSatellite className="ml-2" />;
 }
