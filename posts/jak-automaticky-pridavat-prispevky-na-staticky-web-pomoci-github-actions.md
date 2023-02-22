@@ -8,20 +8,20 @@ tags:
   - GitHubActions
 icon: 'circlePlus'
 ---
-**Při práci na *[Deníku sráčů](https://deniksracu.cz/)* jsem čelil výzvě – umožnit přidávání dat do webové aplikace a zároveň hostovat aplikaci jako statický web tak, abych nemusel utratit ani korunu. Koncept se mi povedlo vymyslet a rád bych se s vámi o něj podělil.**
+**Při práci na open-source projektu *[Deníku sráčů](https://deniksracu.cz/)* jsem čelil výzvě umožnit přidávání dat do webové aplikace a&nbsp;zároveň hostovat aplikaci jako statický web tak, abych nemusel utratit ani korunu. Koncept se mi povedlo vymyslet a&nbsp;rád bych se s&nbsp;vámi o&nbsp;něj podělil.**
 
 ## Představení konceptu
 
-Webovou aplikaci jsem tvořil v [Next.js](https://nextjs.org/) se statický exportem a hostoval ji pomocí služby [Cloudflare Pages](https://pages.cloudflare.com/). Vím, že existuje mnoho jiných alternativ jako je například [Vercel](https://vercel.com/home), [Netlify](https://www.netlify.com/) či [Heroku](https://www.heroku.com/). Cloudflare jsem zvolil především z důvodu pokročilého **cachování** a **ochraně** na úrovni DNS. A v aplikaci jsem měl již připravený HTML form, který mi sbíral data a uměl z nich vytvořit json soubor.
+Webovou aplikaci jsem tvořil v&nbsp;[Next.js](https://nextjs.org/) se statický exportem a&nbsp;hostoval ji pomocí služby [Cloudflare Pages](https://pages.cloudflare.com/). Vím, že existuje mnoho jiných alternativ jako je například [Vercel](https://vercel.com/home), [Netlify](https://www.netlify.com/) či [Heroku](https://www.heroku.com/). Cloudflare jsem zvolil především z&nbsp;důvodu pokročilého **cachování** a&nbsp;**ochraně** na&nbsp;úrovni DNS. A&nbsp;v&nbsp;aplikaci jsem měl již připravený HTML form, který mi sbíral data a&nbsp;uměl z&nbsp;nich vytvořit JSON soubor.
 
 Rozhodl jsem se tedy **infrastrukturu** postavit následujícím způsobem:
 
 ![Scéma infrastrukutry](/posts/images/jak-automaticky-pridavat-prispevky-na-staticky-web-pomoci-github-actions-01.png)
 
-1. Na webu uživatel vyplní **HTML formulář**, který po stisknutí tlačítka **vytvoří JSON soubor** a *POST request*, který obashuje požadovaná data. Web je chráněn proti návštěvě robotů a pro navštívení, je potřeba splnit nejvyšší úroveň zabezpečení.
-2. *Post request* se zpracuje v **proxy serveru**, který běží jako *server less* funkce na službe [Cloudflare Workers](https://workers.cloudflare.com/). Proxy server data ověří a pošle POST request na GitHub API, které **spustí GitHub Actions** s daty jako vstupními parmatery.
+1. Na webu uživatel vyplní **HTML formulář**, který po stisknutí tlačítka **vytvoří JSON soubor** a&nbsp;*POST request*, který obsahuje požadovaná data. Web je chráněn proti návštěvě robotů a&nbsp;pro navštívení, je potřeba splňovat nejvyšší bezpečnostní kritérium.
+2. *Post request* se zpracuje v&nbsp;**proxy serveru**, který běží jako *serverless* funkce na&nbsp;službe [Cloudflare Workers](https://workers.cloudflare.com/). Proxy server data ověří a&nbsp;pošle POST request na&nbsp;GitHub API, které **spustí GitHub Actions** s&nbsp;daty jako vstupními parmatery.
 3. GitHub Actions **vytvoří *pull request***, který čeká na schválení a ověření dat.
-4. Po schválení se mergnou branche a nová verze se **automaticky nahraje** s novými daty.
+4. Po schválení se mergnou branche a&nbsp;nová verze se **automaticky nahraje** s&nbsp;novými daty.
 
 ## Limity
 
