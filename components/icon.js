@@ -7,6 +7,7 @@ import {
   IconAnchor,
   IconAxe,
   IconBiohazard,
+  IconCirclePlus,
   IconEye,
   IconHandOff,
   IconHeadphones,
@@ -33,5 +34,6 @@ export default function Icon({ icon }) {
   if (icon === "wifi") return <IconWifi className="ml-2" />;
   if (icon === "handOff") return <IconHandOff className="ml-2" />;
   if (icon === "axe") return <IconAxe className="ml-2" />;
+  if (icon === "circlePlus") return <IconCirclePlus className="ml-2" />;
   else return <IconSatellite className="ml-2" />;
 }
