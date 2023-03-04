@@ -33,4 +33,4 @@ V chlapcových jednadvaceti letech přišel do království mor. Král vydal na�
 
 ---
 
-Přiznám se, že se bojím toho, že když budou lidé po chválách, modlitbě či mši svaté tleskat, začne mi potlesk stoupat do hlavy a už to nebude o Jesusovi a mě, ale o potlesku a uznání. Vím, že to může znít trochu nadneseně, ale opravdu se mi to pokaždé vybaví.
+Přiznám se, že se bojím toho, že když budou lidé po chválách, modlitbě či mši svaté tleskat, začne mi potlesk stoupat do hlavy a už to nebude o Jesusovi a mně, ale o potlesku a uznání. Vím, že to může znít trochu nadneseně, ale opravdu se mi to pokaždé vybaví.
