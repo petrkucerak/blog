@@ -15,8 +15,8 @@ Věřím, že s&nbsp;touto výzvou se potýká nebo potýkla téměř každý. D
 
 K&nbsp;organizaci svých úkolů používám [ToDo](https://todo.microsoft.com/tasks/) aplikaci od Microsoftu. Především kvůli tomu, že umí šikovně členit úkoly do&nbsp;kategorií a&nbsp;zvýrazňovat úkoly, kterým se rozhodnu daný den věnovat. Nedávno jsem opět řešil přeposlání zajímavého článku. Objevil jsem, že jde přímo z prohlížeče přidávat odkazy jako tasky do ToDo aplikace.
 
-![screerecord postupu](/posts/images/jak-prenest-web-mezi-mobilem-a-pocitacem-01.gif)
-
 Postup je jednoduchý. Otevřete sdílecí panel, vyberete aplikaci [Microsoft ToDo](https://todo.microsoft.com/tasks/) a&nbsp;vyberete konkrétní seznam, do kterého se má úkol přidat.
 
 Pro mne se jedná o&nbsp;vhodné řešení především kvůli tomu, že ToDo list používám k&nbsp;organizaci svojí práce.
+
+![screenrecord postupu](/posts/images/jak-prenest-web-mezi-mobilem-a-pocitacem-01.gif)
