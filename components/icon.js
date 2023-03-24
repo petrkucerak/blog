@@ -8,6 +8,7 @@ import {
   IconAnchor,
   IconAxe,
   IconBiohazard,
+  IconBuildingMonument,
   IconCirclePlus,
   IconEye,
   IconHandOff,
@@ -37,5 +38,7 @@ export default function Icon({ icon }) {
   if (icon === "axe") return <IconAxe className="ml-2" />;
   if (icon === "circlePlus") return <IconCirclePlus className="ml-2" />;
   if (icon === "aerialLift") return <IconAerialLift className="ml-2" />;
+  if (icon === "buildingMonument")
+    return <IconBuildingMonument className="ml-2" />;
   else return <IconSatellite className="ml-2" />;
 }
