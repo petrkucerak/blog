@@ -18,6 +18,8 @@ Nástrojů pro dokumentování kódu existuje je mnoho. Jedním z nejvíce oblí
 
 Toto je poměrně jednoduché a jak na to bych rád popsal v tomto článku. Způsob jsem využil ve své bakalářské práci. Fungující výsledek si můžete prohlédnout v [repositáři projektu](https://github.com/petrkucerak/rafting-button/).
 
+![Ilustrace generování dokumnetace robotem](/posts/images/jak-automaticky-generovat-doxygen-dokumentaci.jpeg)
+
 ## Návod
 
 1. V rootovém adresáři si založte složku `doc`. Není nutné, ale dle mého to pomáhá přehlednosti.
