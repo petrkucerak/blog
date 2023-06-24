@@ -22,7 +22,7 @@ Toto je poměrně jednoduché a jak na to bych rád popsal v tomto článku. Zp�
 
 1. V rootovém adresáři si založte složku `doc`. Není nutné, ale dle mého to pomáhá přehlednosti.
 2. Ve složce si vygenerujte `Doxyfile`, který popisuje konfiguraci dokumentace. Příkladem pro `C` program může být například [konfigurace v zmiňovaném bakalářském projektu](https://github.com/petrkucerak/rafting-button/blob/main/code/rafting-button/doc/Doxyfile).
-3. Dále doporučuji odladit výslednou dokumnetaci pomocí manuálního lokálního vygenerování. (příkaz `doxygen <path to Doxyfile>`)
+3. Dále doporučuji odladit výslednou dokumnetaci pomocí manuálního lokálního vygenerování.<br>*příkaz `doxygen <path to Doxyfile>`*
 4. Vytvořte novou GitHub Action, podle uvedené specifikace:
 
 ```yml
