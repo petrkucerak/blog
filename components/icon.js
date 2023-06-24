@@ -21,6 +21,7 @@ import {
   IconShip,
   IconSlideshow,
   IconWifi,
+  IconWritingSign,
 } from "@tabler/icons";
 export default function Icon({ icon }) {
   if (icon === "headphones") return <IconHeadphones className="ml-2" />;
@@ -40,5 +41,6 @@ export default function Icon({ icon }) {
   if (icon === "aerialLift") return <IconAerialLift className="ml-2" />;
   if (icon === "buildingMonument")
     return <IconBuildingMonument className="ml-2" />;
+  if (icon === "writingSign") return <IconWritingSign className="ml-2" />;
   else return <IconSatellite className="ml-2" />;
 }
