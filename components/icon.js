@@ -17,6 +17,7 @@ import {
   IconMoodBoy,
   IconPresentation,
   IconRecycle,
+  IconRocket,
   IconSatellite,
   IconShip,
   IconSlideshow,
@@ -42,5 +43,6 @@ export default function Icon({ icon }) {
   if (icon === "buildingMonument")
     return <IconBuildingMonument className="ml-2" />;
   if (icon === "writingSign") return <IconWritingSign className="ml-2" />;
+  if (icon === "rocket") return <IconRocket className="ml-2" />;
   else return <IconSatellite className="ml-2" />;
 }
