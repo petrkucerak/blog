@@ -10,6 +10,7 @@ import {
   IconBiohazard,
   IconBow,
   IconBuildingMonument,
+  IconChartHistogram,
   IconCirclePlus,
   IconEye,
   IconHandOff,
@@ -46,5 +47,6 @@ export default function Icon({ icon }) {
   if (icon === "writingSign") return <IconWritingSign className="ml-2" />;
   if (icon === "rocket") return <IconRocket className="ml-2" />;
   if (icon === "bow") return <IconBow className="ml-2" />;
+  if (icon === "chart") return <IconChartHistogram className="ml-2" />;
   else return <IconSatellite className="ml-2" />;
 }
