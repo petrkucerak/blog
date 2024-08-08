@@ -65,34 +65,6 @@ Stránka `index.html` je zodpovědná za zobrazení hodnot. Načítá se pouze j
 
 Stránka `frame.htm` obsahuje pouze hodnoty proměnných, které jsou vyrenderované jádrem Siemens PLC. Tato stránka je volána AJAXem z `index.html` a její obsah je dynamicky aktualizován.
 
-## Převod Sekund na Časový Formát
-
-Pro některé aplikace může být potřeba převést čas ve formátu sekund na čitelnější formát `hh:mm:ss`. K tomu slouží funkce `convertSecondsToHHMMSS()`, která je implementována v souboru `sec2time.js`.
-
-### Implementace
-
-```js
-function convertSecondsToHHMMSS(seconds) {
-  const h = Math.floor(seconds / 3600)
-    .toString()
-    .padStart(2, "0");
-  const m = Math.floor((seconds % 3600) / 60)
-    .toString()
-    .padStart(2, "0");
-  const s = (seconds % 60).toString().padStart(2, "0");
-  return `${h}:${m}:${s}`;
-}
-```
-
-### Použití
-
-```js
-const secString = "BlokPoverUp"; // proměnná s časem v sekundách
-const sec = parseInt(secString); // převede text na int
-const timeString = convertSecondsToHHMMSS(sec); // vrátí string ve formě hh:mm:ss
-console.log(timeString); // například "01:23:45"
-```
-
 ## Závěr
 
 Toto demo ukazuje, jak jednoduše a efektivně vizualizovat data z Siemens PLC pomocí webových technologií. Použitím jQuery pro pravidelné aktualizace a jednoduchých JavaScript funkcí pro zpracování dat lze dosáhnout dynamických a interaktivních webových aplikací bez nutnosti složitých řešení.
