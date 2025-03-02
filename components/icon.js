@@ -1,6 +1,6 @@
 /**
  * Icon library
- * https://tablericons.com/
+ * https://tabler.io/icons
  */
 
 import {
@@ -15,6 +15,7 @@ import {
   IconEye,
   IconHandOff,
   IconHeadphones,
+  IconMessage,
   IconMicrophone2,
   IconMoodBoy,
   IconPresentation,
@@ -48,5 +49,6 @@ export default function Icon({ icon }) {
   if (icon === "rocket") return <IconRocket className="ml-2" />;
   if (icon === "bow") return <IconBow className="ml-2" />;
   if (icon === "chart") return <IconChartHistogram className="ml-2" />;
+  if (icon === "message") return <IconMessage className="ml-2" />;
   else return <IconSatellite className="ml-2" />;
 }
